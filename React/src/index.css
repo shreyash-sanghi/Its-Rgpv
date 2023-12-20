@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: linear-gradient(to right, rgb(2, 2, 22), rgb(13, 3, 18));
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.btnnav {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+.cards-section {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.club-cards {
+  background: linear-gradient(to right, darkblue, darkorchid) 1;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 40px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
+}
+.social-links {
+  background: linear-gradient(to right, rgb(2, 2, 95), rgb(58, 11, 81));
+}
+.appbtn {
+  background: linear-gradient(to right, rgb(2, 2, 81), rgb(44, 10, 61));
+}
+.circle-div {
+  background: linear-gradient(to right, rgb(2, 2, 81), rgb(44, 10, 61));
+}
+.login-form {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkorchid, darkblue) 1;
+}
+.event-input {
+  border-bottom: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkorchid, darkblue) 1;
+}
+.event-cards {
+  border: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(178, 57, 239), rgb(4, 4, 180)) 1;
+  background: linear-gradient(to right, rgb(1, 1, 33), rgb(19, 3, 28));
+}
+.event-banner-div {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTopOb-bzd-zlzjFB6H0_Qeq9wvizdEYebqecN6LXd49A-VcR2LxkHS2NV68E5eGNAHm44&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.active-modal {
+  overflow-y: hidden;
+  background: linear-gradient(to right,rgb(8, 8, 8),rgb(31, 31, 31));
+  backdrop-filter: blur(50px);
+  
+}
+.active-modal2 {
+  overflow-y: hidden;
+  background: linear-gradient(to right,rgb(31, 31, 31),rgb(8, 8, 8));
+  backdrop-filter: blur(50px);
+  
+}
+.stats-div {
+  background: linear-gradient(to right,rgb(10, 1, 35),rgb(43, 4, 45));
+}
+.logoname {
+  background: #3813CF;
+background: linear-gradient(to left, #3202f3 0%, #f30082 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.teamimg {
+  box-shadow: 0 8px 32px 0 rgba(202, 0, 199, 0.37);
+}
+.startup-card {
+  background: linear-gradient(to right, rgb(1, 1, 39), rgb(22, 3, 33));
+}
+.dataset-circle {
+  background: linear-gradient(to right, rgb(2, 2, 54), rgb(36, 5, 54));
+  border: 1px solid white;
+}
+.dataset-container {
+  background: linear-gradient(to left, rgb(2, 2, 36), rgb(22, 3, 32));
+}
+.footer {
+  background: linear-gradient(to left, rgb(1, 1, 17), rgb(13, 2, 19));
+  border-top: 1px solid rgb(74, 5, 74);
+  border-bottom: 1px solid rgb(74, 5, 74);
+}
+.footer button {
+  background: linear-gradient(to right, rgb(2, 2, 32), rgb(38, 6, 56));
+ border: 1px solid blue;
+}
+.student-div {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkorchid, darkblue) 1;
+}
+.studentreg-gif {
+  background-image: url(https://cdn.dribbble.com/users/2375081/screenshots/5786512/4174c5d51f419760f83b3fc2a5913964.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.register-btn-student {
+  background: linear-gradient(to right, rgb(4, 4, 59), rgb(61, 10, 90));
+  border: 1px solid white;
+}
+.register-btn-student2 {
+  background: linear-gradient(to left, rgb(4, 4, 59), rgb(61, 10, 90));
+  border: 1px solid white;
+}
+.stu-form {
+  background-image: url(https://www.icegif.com/wp-content/uploads/2023/08/icegif-354.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur( 40px );
+  -webkit-backdrop-filter: blur( 4px );
+  background-position: center;
+}
+.form-div-container {
+  backdrop-filter: blur( 50px );
+  -webkit-backdrop-filter: blur( 4px );
+}
+.fest-card {
+  background: linear-gradient(to right, rgb(4, 4, 20), rgb(18, 2, 26));
+  box-shadow: 0 8px 32px 0 rgba(56, 13, 57, 0.37);
+  backdrop-filter: blur( 40px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.fest-bg1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fest-heading {
+  font-family: "Roboto";
+  font-weight: 900;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, rgb(3, 3, 41), rgb(26, 6, 35));
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 10px;
+}
+.inizio-video {
+  border: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(184, 41, 255), rgb(4, 4, 233)) 1;
+  box-shadow: 0 8px 32px 0 rgb(3, 22, 92);
+}
+
+.nss-card {
+  background: linear-gradient(to right, rgb(3, 3, 44), rgb(28, 3, 40));
+  border: 1px solid white;
+}
+.navbar {
+  background: linear-gradient(to left, rgb(2, 2, 31), rgb(26, 1, 38));
+}
+.video-bg {
+  background: linear-gradient(to right, rgb(2, 2, 64), rgb(35, 3, 49));
+}
+.institute-div {
+  background: linear-gradient(to right, rgb(4, 4, 40), rgb(34, 8, 48));
+}
+.hostel-btn-bg {
+  background: linear-gradient(to right, rgb(8, 8, 78), rgb(55, 13, 78));
+border: 1px solid gray;
+}
+.card-div-bg {
+  background: linear-gradient(to right, rgb(2, 2, 22), rgb(13, 3, 18));
+}
+.stats-cards {
+  box-shadow: 0 6px 24px 0 rgb(31, 38, 135);
+}
