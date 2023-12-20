@@ -25,7 +25,7 @@ const path = require("path");
 
 app.use(cors(
   {
-    origin:["https//deploy-mern-1whq.vercel.app"]
+    origin:["https//its-rgpv.vercel.app"]
     ,methods:["POST","GET"],
     credentials:true, 
   }
