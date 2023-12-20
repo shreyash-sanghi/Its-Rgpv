@@ -61,7 +61,7 @@ const Edit = ()=>{
   
    const getdata = async()=>{
 
-    const response = await Axios.get(`http://127.0.0.1:4000/edit/${id}`);
+    const response = await Axios.get(`http://its-rgpv-2m34.vercel.app/edit/${id}`);
     
     const Rdata = response.data;
 

@@ -21,7 +21,7 @@ const Dashbord = () => {
   const mydata = async () => {
     try {
       
-      const response = await axios.get(`http://127.0.0.1:4000/Dashbord/${id}`);
+      const response = await axios.get(`http://its-rgpv-2m34.vercel.app/Dashbord/${id}`);
     console.log(response);
     const registerData = response.data.data;
     registerData.map((object) => {
@@ -135,7 +135,7 @@ const Dashbord = () => {
                                 const con =  confirm("You have Confirm delete club id...")
                                 try{
                                     if(con === true){
-                                  await axios.delete(`http://127.0.0.1:4000/Dashbord/${Personaldata.Rid}`);
+                                  await axios.delete(`http://its-rgpv-2m34.vercel.app/Dashbord/${Personaldata.Rid}`);
                                   toast("Successfully delete...")
                                   final((initial)=>
                                   initial.filter(e=>e.Rid!=Personaldata.Rid)

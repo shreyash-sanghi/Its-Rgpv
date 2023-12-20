@@ -36,7 +36,7 @@ const VarifyEvent = () => {
 
 
     const getdata = async () => {
-        const response = await axios.get(`http://127.0.0.1:4000/VerifyEvent/${id}`);
+        const response = await axios.get(`http://its-rgpv-2m34.vercel.app/VerifyEvent/${id}`);
         const resdata = response.data;
         console.log(resdata);
         initial2((info) => {
@@ -63,10 +63,10 @@ const VarifyEvent = () => {
         e.preventDefault();
         const {EventName,Discreption,Place,EDate,Time,Name,RegLink,Image, Email} = ini;
         const ReqEmail = Email;
-        const responce = await axios.post(`http://127.0.0.1:4000/VerifyEvent/${id}`,{
+        const responce = await axios.post(`http://its-rgpv-2m34.vercel.app/VerifyEvent/${id}`,{
             EventName,Discreption,Place,EDate,Time,Name,RegLink,Image, ReqEmail
         })
-           await axios.delete(`http://127.0.0.1:4000/Request/${id}`);
+           await axios.delete(`http://its-rgpv-2m34.vercel.app/Request/${id}`);
           navigate(`/maindashboard/${Mid}`)
           emailjs.sendForm('service_edl04xe','template_nok8by1', form.current, 'fA8kcfAFIvcziEYcA')
           .then((result) => {
@@ -210,7 +210,7 @@ const VarifyEvent = () => {
                         </label>
                     </div>
                     <div className="px-2 py-4 whitespace-nowrap">
-                   <img  src={`http://127.0.0.1:4000/images/`+ini.Image} className="w-[13rem] h-[12rem]"/> </div>
+                   <img  src={`http://its-rgpv-2m34.vercel.app/images/`+ini.Image} className="w-[13rem] h-[12rem]"/> </div>
                    </div>
                 <div className="grid md:grid-cols-2 md:gap-6">
                     <div className="relative z-0 w-full mb-6 group">
@@ -276,7 +276,7 @@ const VarifyEvent = () => {
 
 
                 <button id="deletebutton" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800" onClick={async () => {
-                                  const response = await axios.delete(`http://127.0.0.1:4000/Request/${id}`);
+                                  const response = await axios.delete(`http://its-rgpv-2m34.vercel.app/Request/${id}`);
                                  toast("Request have been delete...")
                               setTimeout(()=>{
                               navigate(`/maindashboard/${Mid}`)

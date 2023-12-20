@@ -145,7 +145,7 @@ const ComplaintDashboard = () => {
                             onClick={async()=>{
                                 const conformation = confirm("You have conform");
                                 if(conformation===true){
-                                await axios.delete(`http://127.0.0.1:4000/Complaint/${info.Did}`);
+                                await axios.delete(`http://its-rgpv-2m34.vercel.app/Complaint/${info.Did}`);
                                 toast("Sucsessfully Delete...")
                                 final((initial)=>
                                 initial.filter(e=>e.Did!=info.Did)
