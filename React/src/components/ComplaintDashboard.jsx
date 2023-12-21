@@ -27,7 +27,7 @@ const ComplaintDashboard = () => {
 
     const getdata = async()=>{
         try{
-        const response = await axios.get(`http://localhost:4000/Complaint/${id}`);
+        const response = await axios.get(`http://its-rgpv-backend.vercel.app/Complaint/${id}`);
         const resdata = response.data.data;
         resdata.map((info)=>{
             final((sdata) => [
@@ -145,7 +145,7 @@ const ComplaintDashboard = () => {
                             onClick={async()=>{
                                 const conformation = confirm("You have conform");
                                 if(conformation===true){
-                                await axios.delete(`http://its-rgpv-2m34.vercel.app/Complaint/${info.Did}`);
+                                await axios.delete(`http://its-rgpv-backend.vercel.app/Complaint/${info.Did}`);
                                 toast("Sucsessfully Delete...")
                                 final((initial)=>
                                 initial.filter(e=>e.Did!=info.Did)
