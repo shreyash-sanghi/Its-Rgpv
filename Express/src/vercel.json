@@ -1,6 +1,5 @@
 {
     "version":2,
-    "name":"its-rgpv",
     "builds": [
         {"src": "*.js","use": "@vercel/node"}
     ],
