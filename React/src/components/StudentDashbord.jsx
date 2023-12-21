@@ -22,7 +22,7 @@ const StudentDashbord = () => {
   }])
   const mydata = async () => {
     try{
-    const response = await axios.get(`http://its-rgpv-2m34.vercel.app/StudentDashbord/${id}`);
+    const response = await axios.get(`http://its-rgpv.vercel.app/StudentDashbord/${id}`);
     const registerData = response.data.data;
     registerData.map((object) => {
       final((info) => [
@@ -146,7 +146,7 @@ const StudentDashbord = () => {
                           <button style={{padding:'5px'}} onClick={async()=>{
                             const conformation = confirm("You have conform");
                             if(conformation===true){
-                            await axios.delete(`http://its-rgpv-2m34.vercel.app/StudentDashbord/${Personaldata.Rid}`);
+                            await axios.delete(`http://its-rgpv.vercel.app/StudentDashbord/${Personaldata.Rid}`);
                             toast("Successfully delete...")
                             final((initial)=>
                             initial.filter(e=>e.Rid!=Personaldata.Rid)

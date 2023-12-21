@@ -26,7 +26,7 @@ const PastEventDashboard =()=>{
 
     const mydata = async () => {
       try{
-      const response = await axios.get(`http://its-rgpv-2m34.vercel.app/PastEvent/${id}`);
+      const response = await axios.get(`http://its-rgpv.vercel.app/PastEvent/${id}`);
       const registerData = response.data.data;
       registerData.map((object) => {
         final((info) => [
@@ -179,7 +179,7 @@ const PastEventDashboard =()=>{
                           <button style={{padding:'5px'}} onClick={async()=>{
                             const conformation = confirm("You have conform");
                             if(conformation===true){
-                            await axios.delete(`http://its-rgpv-2m34.vercel.app/PastEvent/${Personaldata.Rid}`);
+                            await axios.delete(`http://its-rgpv.vercel.app/PastEvent/${Personaldata.Rid}`);
 
                             toast("Sucsessfully Delete...")
                             final((initial)=>

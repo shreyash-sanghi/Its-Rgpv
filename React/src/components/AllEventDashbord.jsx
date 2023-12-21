@@ -24,7 +24,7 @@ const AllEventDashbord =()=>{
     const mydata = async () => {
       try {
         
-        const response = await axios.get(`http://its-rgpv-2m34.vercel.app/AllEventDashbord/${id}`);
+        const response = await axios.get(`http://its-rgpv.vercel.app/AllEventDashbord/${id}`);
         const registerData = response.data.data;
         registerData.map((object) => {
           final((info) => [
@@ -202,7 +202,7 @@ const AllEventDashbord =()=>{
                         <tr className="bg-black bg-opacity-20">
                           <td className="pl-4">{inicount}</td>
                           <td className="px-6 py-4 whitespace-nowrap">
-                          <img  src={`http://its-rgpv-2m34.vercel.app/images/`+Personaldata.EventBanner} className="w-20 h-10"/>
+                          <img  src={`http://its-rgpv.vercel.app/images/`+Personaldata.EventBanner} className="w-20 h-10"/>
                             </td>
                           <td className="flex px-6 py-4 whitespace-nowrap">
                             <span className="ml-2 font-medium">{Personaldata.EventName}</span>
@@ -221,7 +221,7 @@ const AllEventDashbord =()=>{
                           <button style={{padding:'5px'}} onClick={async()=>{
                             const conformation = confirm("You have conform");
                             if(conformation===true){
-                            await axios.delete(`http://its-rgpv-2m34.vercel.app/PersonalPage/${Personaldata.Rid}`);
+                            await axios.delete(`http://its-rgpv.vercel.app/PersonalPage/${Personaldata.Rid}`);
                             toast("Sucsessfully Delete...")
                             final((initial)=>
                             initial.filter(e=>e.Rid!=Personaldata.Rid)

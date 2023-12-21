@@ -35,7 +35,7 @@ const StuReg = async (event)=>{
     const { Name, CompEmail, MobileNumber,Year,Branch,ComDiscribe,ComAbout,College,Suggestion} = initial;
 
       try {
-        const response = await Axios.post("http://localhost:4000/Complaint",{
+        const response = await Axios.post("http://its-rgpv.vercel.app/Complaint",{
             Name, CompEmail, MobileNumber,Year,Branch,ComDiscribe,ComAbout,College,Suggestion,PostDate
          })
          alert("Your Complain have been send sucessfully...")
