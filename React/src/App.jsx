@@ -3,7 +3,7 @@ import Navbar from './components/MiainFile'
 // import Eventadd from '../../React/EventX/src/components/Eventadd'
 
 const App = () => {
-  
+  axios.defaults.withCredentials = true;
   return (
     <>
     <Navbar/>
