@@ -17,7 +17,7 @@ const path = require("path");
 //React Cors
 // app.use(cors(
 //   {
-//     origin:["http://localhost:5173"],
+//     origin:["http://its-rgpv-2m34.vercel.app"],
 //     credentials:true,
 //     optionsSuccessStatus:200
 //   }
