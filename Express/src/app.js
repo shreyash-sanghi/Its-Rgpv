@@ -31,7 +31,7 @@ app.use(cors(
   }
 ));
 
-mongoose.connect('mongodb+srv://shreyashjain:Bittu@8085@shreyashjain.dhe7mgt.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://shreyashjain:Bittu@8085@shreyashjain.dhe7mgt.mongodb.net/ProjectData?retryWrites=true&w=majority')
 //Tak Data Function
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', "http://localhost:5173"); 
