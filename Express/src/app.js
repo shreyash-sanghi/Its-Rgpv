@@ -43,10 +43,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'))
 app.use(cookieParser());
+
 app.get("/", (req,res)=>
 {
   res.send("Hello, Its rgpv!")
 })
+
 app.use(request_router);
 app.use(total_registration);
 app.use(Secret_Page);
@@ -79,4 +81,5 @@ app.use(complaint_page);
 app.listen(port,()=>{
     console.log("Connection Sucessfully....")
 })
-module.exports = app
+
+// module.exports = app
