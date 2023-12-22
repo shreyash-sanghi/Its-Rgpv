@@ -14,6 +14,12 @@ const port = 4000 || process.env.PORT;
 const multer = require('multer');
 const path = require("path");
 
+
+app.get("/", (req,res)=>
+{
+  res.send("Hello, Its rgpv!")
+})
+
 //React Cors
 // app.use(cors(
 //   {
@@ -44,10 +50,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'))
 app.use(cookieParser());
 
-app.get("/", (req,res)=>
-{
-  res.send("Hello, Its rgpv!")
-})
+
 
 app.use(request_router);
 app.use(total_registration);
