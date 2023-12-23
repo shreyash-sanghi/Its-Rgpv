@@ -48,12 +48,7 @@ const RegData = (event)=>{
         }
         );
     } catch (error) {
-      if(error.response.request.status === 401){
-        navigate('/errorpage');
-    }
-    else{
-      alert("They have some error please register again...")
-    }
+         alert("They have some error please register again...")
     } 
 }
 
