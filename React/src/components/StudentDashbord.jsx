@@ -146,7 +146,7 @@ const StudentDashbord = () => {
                           <button style={{padding:'5px'}} onClick={async()=>{
                             const conformation = confirm("You have conform");
                             if(conformation===true){
-                            await axios.delete(`http://its-rgpv-backend.vercel.app/StudentDashbord/${Personaldata.Rid}`);
+                            await axios.delete(`http://its-rgpv-nmum.vercel.app/StudentDashbord/${Personaldata.Rid}`);
                             toast("Successfully delete...")
                             final((initial)=>
                             initial.filter(e=>e.Rid!=Personaldata.Rid)

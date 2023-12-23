@@ -24,9 +24,11 @@ const Home = () => {
   const co =document.cookie.split('=');
   const token = co[1];
   
+  // const getwithouttoken = await axios.get('')
+
   const getdata =async(e)=>{
     try{
-    const responce = await axios.get(`http://its-rgpv-backend.vercel.app/${token}`)
+    const responce = await axios.get(`http://its-rgpv-nmum.vercel.app/${token}`)
     const data = responce.data;
     const Mid = data.id;
     const Email = data.Email;
@@ -44,18 +46,17 @@ const Home = () => {
     navigate("/")
   }
 }
-
-   if(token !== ''|| token==='undefined'){
+   
+console.log(token)
+   if(token != ''|| token !=='undefined'){
     useEffect(() => {
       getdata();
     },[])
    }
+
   return (
     <>
-    {/* <MainDashboard></MainDashboard> */}
-    {/* <Update></Update> */}
     <Navbar></Navbar>
-      {/* <Input/> */}
     <Hero></Hero>
       <Fest></Fest>
       <EventData/>

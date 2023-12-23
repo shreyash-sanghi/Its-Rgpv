@@ -5,7 +5,6 @@ import PastEvent from "./PastEvent"
 const FullEvent = ()=>{
     return(
         <>
-        
         <Update/>
         <PastEvent/>
         </>

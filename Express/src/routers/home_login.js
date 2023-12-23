@@ -4,8 +4,10 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const Register = require('../Model/RegModel');
 
-router.get("/:token",async(req,res,next)=>{
+router.get("/:token",async(req,res)=>{
     try {
+      console.log("Hello")
+      console.log(req.cookie())
        const token = req.params.token;
        const varifyUser = jwt.verify(token,process.env.Sectet_Key1);
        const user = await Register.findOne({_id:varifyUser._id})

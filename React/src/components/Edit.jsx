@@ -36,7 +36,7 @@ const Edit = ()=>{
     const {  EventName, Discreption, Place,EDate,Time, HostName,Email,EventBanner,RegLink,Password} = ini;
     const ReqEmail = Email;
       try {
-        const response = await Axios.post(`http://its-rgpv-backend.vercel.app/edit/${id}`,{
+        const response = await Axios.post(`http://its-rgpv-nmum.vercel.app/edit/${id}`,{
           EventName, Discreption, Place,EDate,Time, HostName,ReqEmail,EventBanner,RegLink,Password
          })
          console.log(response.status);
@@ -61,7 +61,7 @@ const Edit = ()=>{
   
    const getdata = async()=>{
 
-    const response = await Axios.get(`http://its-rgpv-backend.vercel.app/edit/${id}`);
+    const response = await Axios.get(`http://its-rgpv-nmum.vercel.app/edit/${id}`);
     
     const Rdata = response.data;
 
