@@ -3,13 +3,13 @@ const express = require('express');
 const app =express();
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
-const request_router = require('./routers/request.js');
-const total_registration = require('./routers/registration.js');
-const Secret_Page = require('./routers/SecretPage.js');
-const events_page = require('./routers/events.js');
-const home_login = require('./routers/home_login.js');
-const complaint_page = require('./routers/complaint.js');
-require("./DB/RegisterData")
+const request_router = require('./src/routers/request.js');
+const total_registration = require('./src/routers/registration.js');
+const Secret_Page = require('./src/routers/SecretPage.js');
+const events_page = require('./src/routers/events.js');
+const home_login = require('./src/routers/home_login.js');
+const complaint_page = require('./src/routers/complaint.js');
+require("./src/DB/RegisterData.js")
 const port = 4000 || process.env.PORT;
 const multer = require('multer');
 const path = require("path");
