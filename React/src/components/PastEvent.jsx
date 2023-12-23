@@ -22,7 +22,7 @@ const Update = () => {
   const allupdate = async () => {
 
     try {
-      const response = await axios.get(`http://its-rgpv-nmum.vercel.app/PastEvent/${token}`);
+      const response = await axios.get(`http://its-rgpv-nmum.vercel.app/PastEvent`);
       const data = response.data.data;
       console.log(response)
       data.map((object) => {
