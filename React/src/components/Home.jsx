@@ -17,6 +17,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import EventData from "./EventData.jsx"
 import StartupsSection from "./StartupsSection.jsx";
+import DepartmentsSection from "./DepartmentsSection.jsx";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -24,7 +25,6 @@ const Home = () => {
   const co =document.cookie.split('=');
   const token = co[1];
   
-  // const getwithouttoken = await axios.get('')
 
   const getdata =async(e)=>{
     try{
@@ -48,11 +48,11 @@ const Home = () => {
 }
    
 console.log(token)
-   if(token != ''|| token !=='undefined'){
-    useEffect(() => {
-      getdata();
-    },[])
-   }
+  //  if(token !=='undefined'){
+  //   useEffect(() => {
+  //     getdata();
+  //   },[])
+  //  }
 
   return (
     <>
@@ -62,13 +62,14 @@ console.log(token)
       <EventData/>
       <Cards></Cards>
       <Inzio></Inzio>
-      <Nss></Nss>
+      {/* <Nss></Nss> */}
       <Ourapp></Ourapp>
       <DepartmentalClubs></DepartmentalClubs>
       <MemoriesGlimpses></MemoriesGlimpses>
       <StartupsSection/>
       <SportsGroup></SportsGroup>
       <Partners></Partners>
+      <DepartmentsSection/>
       <Placement></Placement>
       <Team></Team>
       <Footer></Footer>

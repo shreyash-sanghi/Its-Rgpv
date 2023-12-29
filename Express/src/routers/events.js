@@ -115,24 +115,27 @@ const images = path.join(__dirname, "../../public/images");
   
   //***************----------------------------*********************** */
   // Show Event
-  router.get("/events/:token", async (req, res) => {
+  router.get("/events", async (req, res) => {
     try{
+      console.log("My name is event")
         const data = await AddEvent.find();
         res.json({data:data});
-        res.status(201);
+        res.sendStatus(201);
         }catch(e){
-         res.status(404).send(e);
+          console.log(e);
+         res.sendStatus(404);
         }
   }) 
   
   //Past Event Show
-  router.get("/PastEvent/:token",async(req,res)=>{
+  router.get("/PastEvent",async(req,res)=>{
     try{
       const data = await PastEvent.find();
       res.json({data:data});
-      res.status(201);
+      res.sendStatus(201);
       }catch(e){
-        res.status(404).send(e);
+        console.log(e);
+        res.sendStatus(404);
       }
   })
   

@@ -24,27 +24,27 @@ const Fest = () => {
             <span className="relative ml-4">Events</span>
           </span>
         </h1>
-        <p className="mx-auto mt-12 text-xl px-8 lg:px-16 text-center md:px-16 md:text-lg md:leading-7">
+        <p className="mx-auto mt-12 text-lg px-1 lg:px-16 text-center md:px-16 md:text-lg md:leading-7">
           "College fests and technical events are the highlights of our
           educational journey, where we come together to celebrate, create
           lasting memories, and strengthen the bonds of joy and happiness that
           define our college experience."
         </p>
       </main>
-      <section className="px-8">
-        <div className="container px-5 py-16 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card rounded-lg p-10 md:p-0 sm:flex-row flex-col items-center">
+      <section class="px-8 overflow-x-hidden">
+        <div class="container px-5 py-16 mx-auto justify-center flex flex-wrap">
+          <div class="flex  flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex  fest-card  rounded-lg py-4 px-3 text-center md:text-start  md:p-0 sm:flex-row flex-col items-center">
                 <div
-                  className="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{ backgroundImage: `url(${shankhnaadimg2})` }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2">
+                <div class="flex-grow md:pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2">
                     Shankhnaad
                   </h2>
-                  <p className="leading-relaxed text-sm text-center md:text-start my-1 lg:my-2">
+                  <p class="leading-relaxed text-sm my-1 lg:my-2">
                     RGPV's cultural gem, hosts an annual celebration of
                     creativity. This grand festival features singing, dancing,
                     debates, and more, promoting Hindi language.
@@ -53,39 +53,39 @@ const Fest = () => {
                   <a
                     href="https://www.instagram.com/shankhnaad_rgpv/"
                     target="blank"
-                    className="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Instagram <i className="ri-instagram-fill ml-1"></i>
+                    Instagram <i class="ri-instagram-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Gallery <i className="ri-folder-image-fill ml-1"></i>
+                    Gallery <i class="ri-folder-image-fill ml-1"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card p-10 md:p-0 rounded-lg  sm:flex-row flex-col items-center">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex 2 fest-card py-4 px-3 md:p-0 rounded-lg text-center md:text-start  sm:flex-row flex-col items-center">
                 <div
-                  className="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{ backgroundImage: `url(${tedximg})` }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2">
+                <div class="flex-grow pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2">
                     TedX
                   </h2>
-                  <p className="leading-relaxed text-sm text-center md:text-start my-1 lg:my-2">
+                  <p class="leading-relaxed text-sm  my-1 lg:my-2">
                     Tedx RGPV features your favorite stars and influencers on
                     stage, offering guidance and motivation to pursue your
                     passions and dreams.
@@ -94,39 +94,39 @@ const Fest = () => {
                   <a
                     href="https://www.instagram.com/tedxrgpv/"
                     target="blank"
-                    className="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Instagram <i className="ri-instagram-fill ml-1"></i>
+                    Instagram <i class="ri-instagram-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Gallery <i className="ri-folder-image-fill ml-1"></i>
+                    Gallery <i class="ri-folder-image-fill ml-1"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card p-10 md:p-0 rounded-lg sm:flex-row flex-col items-center">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex 2 fest-card py-4 px-3 md:p-0 rounded-lg text-center md:text-start sm:flex-row flex-col items-center">
                 <div
-                  className="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{ backgroundImage: `url(${mahasangramimg3})` }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2">
+                <div class="flex-grow pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2">
                     Mahasangram
                   </h2>
-                  <p className="leading-relaxed text-sm text-center md:text-start my-1 lg:my-2">
+                  <p class="leading-relaxed text-sm my-1 lg:my-2">
                     UIT RGPV's premier annual sports event since 2011, fosters
                     physical fitness, mental alertness, unity, sportsmanship,
                     team spirit, confidence, and leadership.
@@ -135,39 +135,39 @@ const Fest = () => {
                   <a
                     href="https://www.instagram.com/mahasangram_x/"
                     target="blank"
-                    className="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Instagram <i className="ri-instagram-fill ml-1"></i>
+                    Instagram <i class="ri-instagram-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Gallery <i className="ri-folder-image-fill ml-1"></i>
+                    Gallery <i class="ri-folder-image-fill ml-1"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card p-10 md:p-0 rounded-lg sm:flex-row flex-col items-center">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex 2 fest-card py-4 px-3 md:p-0 rounded-lg text-center md:text-start sm:flex-row flex-col items-center">
                 <div
-                  className="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{ backgroundImage: `url(${ecelleventimg})` }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2">
+                <div class="flex-grow pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2">
                     Imprenditore
                   </h2>
-                  <p className="leading-relaxed text-sm text-center md:text-start my-1 lg:my-2">
+                  <p class="leading-relaxed text-sm my-1 lg:my-2">
                     Imprenditore, E-Cell annual fest, promotes entrepreneurship
                     through awareness. Aims to inspire and nurture
                     entrepreneurial spirit and mindset.
@@ -176,38 +176,38 @@ const Fest = () => {
                   <a
                     href="https://www.instagram.com/ecell_rgpv/"
                     target="blank"
-                    className="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Instagram <i className="ri-instagram-fill ml-1"></i>
+                    Instagram <i class="ri-instagram-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Gallery <i className="ri-folder-image-fill ml-1"></i>
+                    Gallery <i class="ri-folder-image-fill ml-1"></i>
                   </a>
                 </div>
               </div>
             </div>
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card p-10 md:p-0 rounded-lg sm:flex-row flex-col items-center">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex 2 fest-card py-4 px-3 md:p-0 rounded-lg text-center md:text-start sm:flex-row flex-col items-center">
                 <div
-                  className="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{ backgroundImage: `url(${codeadeptimg})` }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2">
+                <div class="flex-grow pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2">
                     CodeAdept
                   </h2>
-                  <p className="leading-relaxed text-sm text-center md:text-start my-1 lg:my-2">
+                  <p class="leading-relaxed text-sm my-1 lg:my-2">
                     Technical Event conducted by the IT Dept. of UIT, RGPV.
                     Coding Competition | Sharpens your placement stratergies |
                     Enhance your coding skills.
@@ -216,40 +216,40 @@ const Fest = () => {
                   <a
                     href="https://www.instagram.com/codeadept/"
                     target="blank"
-                    className="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Instagram <i className="ri-instagram-fill ml-1"></i>
+                    Instagram <i class="ri-instagram-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Gallery <i className="ri-folder-image-fill ml-1"></i>
+                    Gallery <i class="ri-folder-image-fill ml-1"></i>
                   </a>
                 </div>
               </div>
             </div>
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card p-10 md:p-0 rounded-lg sm:flex-row flex-col items-center">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex 2 fest-card py-4 px-3 md:p-0 rounded-lg text-center md:text-start sm:flex-row flex-col items-center">
                 <div
-                  className="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-60 m-1 h-44 sm:mr-8 sm:mb-0 border border-yellow-500 md:border-r-2 md:border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{
                     backgroundImage: `url(https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/09/Capture_HAckathon_wordpress-1280x720.jpg)`,
                   }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2 ">
+                <div class="flex-grow pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2 ">
                     Web-Xplore
                   </h2>
-                  <p className="leading-relaxed text-sm text-center md:text-start my-1 lg:my-2">
+                  <p class="leading-relaxed text-sm my-1 lg:my-2">
                     Webxplore, an incredible tech event by the CSE department,
                     strives to create outstanding web projects within a short
                     timeframe.
@@ -258,23 +258,23 @@ const Fest = () => {
                   <a
                     href=""
                     target="blank"
-                    className="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Instagram <i className="ri-instagram-fill ml-1"></i>
+                    Instagram <i class="ri-instagram-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-yellow-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Gallery <i className="ri-folder-image-fill ml-1"></i>
+                    Gallery <i class="ri-folder-image-fill ml-1"></i>
                   </a>
                 </div>
               </div>

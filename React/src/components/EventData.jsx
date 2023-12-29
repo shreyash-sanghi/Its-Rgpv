@@ -24,67 +24,67 @@ const PastEvents = () => {
           </span>
         </h1>
       </main>
-      <div className="container mx-auto md:px-6 lg:px-16">
-        <section className="mb-10 text-center">
-          <div className="grid grid-cols-2 gap-x-6 px-6 md:px-0 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-6">
-            <div className="mb-12 stats-cards border-2 rounded-xl border-purple-400 lg:mb-0">
-              <div className="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
+      <div class="container overflow-hidden mx-auto md:px-6 lg:px-16">
+        <section class="mb-10 text-center">
+          <div class="grid grid-cols-2 gap-x-6 px-6 md:px-0 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-6">
+            <div class="mb-12 stats-cards border-2 rounded-xl border-purple-400 lg:mb-0">
+              <div class="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
                 <img className="h-32 w-32" src={stats1} alt="" />
               </div>
-              <h5 className="mb-4 text-lg">Offline Events</h5>
+              <h5 class="mb-4 text-lg">Offline Events</h5>
             </div>
 
-            <div className="mb-12 stats-cards border-2 rounded-xl border-purple-400 lg:mb-0">
-              <div className="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
+            <div class="mb-12 stats-cards border-2 rounded-xl border-purple-400 lg:mb-0">
+              <div class="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
                 <img className="h-32 w-32" src={stats2} alt="" />
               </div>
-              <h5 className="mb-4 text-lg">Online Events</h5>
+              <h5 class="mb-4 text-lg">Online Events</h5>
             </div>
 
-            <div className="mb-12 stats-cards border-2 rounded-xl border-purple-400 lg:mb-0">
-              <div className="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
+            <div class="mb-12 stats-cards border-2 rounded-xl border-purple-400 lg:mb-0">
+              <div class="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
                 <img className="h-32 w-32" src={stats3} alt="" />
               </div>
-              <h5 className="mb-4 text-lg">Tech Events</h5>
+              <h5 class="mb-4 text-lg">Tech Events</h5>
             </div>
 
 
-            <div className="mb-12 stats-cards border-2 rounded-xl border-blue-300 md:mb-0">
-              <div className="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
+            <div class="mb-12 stats-cards border-2 rounded-xl border-blue-300 md:mb-0">
+              <div class="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
                 <img className="h-32 w-32" src={stats4} alt="" />
               </div>
-              <h5 className="mb-4 text-lg">Non Tech Events</h5>
+              <h5 class="mb-4 text-lg">Non Tech Events</h5>
             </div>
-            <div className="mb-12 stats-cards border-2 rounded-xl border-violet-300 md:mb-0">
-              <div className="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
+            <div class="mb-12 stats-cards border-2 rounded-xl border-violet-300 md:mb-0">
+              <div class="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
                 <img className="h-32 w-32" src={stats1} alt="" />
               </div>
-              <h5 className="mb-4 text-lg">Workshops</h5>
+              <h5 class="mb-4 text-lg">Workshops</h5>
             </div>
-            <div className="mb-12 stats-cards border-2 rounded-xl border-violet-300 md:mb-0">
-              <div className="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
+            <div class="mb-12 stats-cards border-2 rounded-xl border-violet-300 md:mb-0">
+              <div class="mb-0 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-sm">
                 <img className="h-32 w-32" src={stats2} alt="" />
               </div>
-              <h5 className="mb-4 text-lg">Seminars</h5>
+              <h5 class="mb-4 text-lg">Seminars</h5>
             </div>
           </div>
         </section>
       </div>
-      <div className="px-10 md:px-4 py-0 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-2 lg:pb-10">
+      <div className="px-4 md:px-19 py-0 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-2 lg:pb-10">
       <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
           <div className="max-w-xl mb-6">
             <div>
-              <p className="inline-block lg:pl-1 py-px mb-4 text-sm font-semibold tracking-wider text-pink-700 uppercase rounded-full">
+              <p className="lg:pl-1 py-px text-center md:text-start mb-4 text-sm font-semibold tracking-wider text-pink-700 uppercase rounded-full">
                 Event Highlights
               </p>
             </div>
-            <h2 className="max-w-lg mb-6  text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg mb-6 text-center md:text-start text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none">
               Overall Yearwise Events &
               <br className="hidden md:block" />
               Selection Details
             </h2>
-            <p className="text-base text-gray-4 00 md:text-lg">
+            <p className="text-base text-center md:text-start text-gray-4 00 md:text-lg">
             The abundance of events on campus is a testament to the enthusiasm of clubs, active student involvement, and the dedicated support of college faculty. This collaborative effort fosters a vibrant and engaging campus culture, where a diverse range of activities enrich the overall student experience, creating a lively and dynamic educational environment.
 
 

@@ -16,6 +16,7 @@ router.get("/registration/:id", async(req,res)=>{
   router.post("/registration/:id", async(req,res)=>{
     try {
       const {Password,Cpassword,GroupName,Fname, CurrentLeader, Email,MobileNumber,secretkey} = req.body;
+      console.log(Password+" "+Cpassword+" "+GroupName+" "+Fname+" "+ CurrentLeader+" "+ Email+" "+MobileNumber+" "+secretkey)
       if(Password === Cpassword && secretkey===process.env.MainSecretKey){
       const reg = await Register.create({
           Password,Cpassword,GroupName,Fname, CurrentLeader, Email,MobileNumber

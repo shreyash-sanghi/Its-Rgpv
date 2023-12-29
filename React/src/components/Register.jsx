@@ -34,6 +34,7 @@ const RegData = (event)=>{
    const RegSubmit = async (event)=>{
     event.preventDefault();
       const { GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey} = initial;
+      // console.log( GroupName+" "+Fname+" "+CurrentLeader+" "+ Email+" "+ MobileNumber+" "+Password+" "+Cpassword+" "+secretkey)
       try {
         const response = await Axios.post(`http://its-rgpv-nmum.vercel.app/registration/${id}`,{
             GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey
@@ -48,12 +49,7 @@ const RegData = (event)=>{
         }
         );
     } catch (error) {
-      if(error.response.request.status === 401){
-        navigate('/errorpage');
-    }
-    else{
-      alert("They have some error please register again...")
-    }
+      alert("They have some error please register again...");
     } 
 }
 

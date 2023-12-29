@@ -24,178 +24,178 @@ const DepartmentalClubs = () => {
             <span className="relative ml-4">Clubs</span>
           </span>
         </h1>
-        <p className="mx-auto mt-12 text-xl px-8 lg:px-16 text-center md:px-16 md:text-lg md:leading-7">
+        <p className="mx-auto overflow-x-hidden mt-12 text-lg lg:text-xl px-0 lg:px-16 text-center md:px-16 md:text-lg md:leading-7">
       "Departmental clubs play a crucial role in skill enhancement and offer valuable opportunities for growth. They contribute significantly to personal and professional development within a departmental context."
       </p>
       </main>
-      <div className="flex items-center pb-10 justify-center">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-5">
-          <div className="relative py-6 px-6 rounded-3xl club-cards w-64 my-4 shadow-xl">
-            <div className=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 z-50 shadow-xl  left-4 -top-6">
+      <div class="flex items-center pb-10 justify-center">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-5">
+          <div class="relative py-6 px-6 rounded-3xl club-cards w-64 my-4 shadow-xl">
+            <div class=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 z-50 shadow-xl  left-4 -top-6">
               <img
                 src={technophiliclogo}
                 className="object-contain object-center rounded-full h-12 border-2 border-blue-400"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-lg w-fit bg-pink-800 px-2 rounded-lg font-semibold my-2">Technophilic Club</p>
-              <p className="text-sm font-semibold my-2">By - Civil Department</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-lg w-fit bg-pink-800 px-2 rounded-lg font-semibold my-2">Technophilic Club</p>
+              <p class="text-sm font-semibold my-2">By - Civil Department</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                   To promote out-of-the-box thinking among new generation civil
                   engineers.
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a
                     href="https://www.instagram.com/_technophilic/"
                     target="_blank"
                   >
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="relative py-6 px-6 club-cards rounded-3xl w-64 my-4 shadow-xl">
-            <div className=" text-white flex items-center card-div-bg absolute rounded-full py-4 px-4 shadow-xl left-4 -top-6">
+          <div class="relative py-6 px-6 club-cards rounded-3xl w-64 my-4 shadow-xl">
+            <div class=" text-white flex items-center card-div-bg absolute rounded-full py-4 px-4 shadow-xl left-4 -top-6">
               <img
                 src={innovationecelogo}
                 className="object-contain object-center border-2  border-blue-400 rounded-full h-12"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-lg w-fit bg-orange-700 px-2 rounded-lg font-semibold my-2">Innovations @ECE</p>
-              <p className="text-sm font-semibold my-2">By - ECE Department</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-lg w-fit bg-orange-700 px-2 rounded-lg font-semibold my-2">Innovations @ECE</p>
+              <p class="text-sm font-semibold my-2">By - ECE Department</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                   Electronics club of the ECE Department at UIT RGPV Bhopal!
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
 
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a href="https://www.instagram.com/iec_uit/" target="_blank">
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
-            <div className=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 shadow-xl left-4 -top-6">
+          <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
+            <div class=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 shadow-xl left-4 -top-6">
               <img
                 src="https://www.rgpv.ac.in/Images/RGPVLOGO.JPG"
                 className="object-contain mix-blend-difference border-2 border-blue-400 object-center rounded-full h-12"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-lg w-fit bg-blue-700 px-2 rounded-lg font-semibold my-2">DOIT Club</p>
-              <p className="text-sm font-semibold my-2">By - IT Department</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-lg w-fit bg-blue-700 px-2 rounded-lg font-semibold my-2">DOIT Club</p>
+              <p class="text-sm font-semibold my-2">By - IT Department</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                   Our aim is to weave threads of passion, innovation, and
                   community spirit.
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
 
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
-            <div className=" text-white flex items-center absolute rounded-full card-div-bg py-4 px-4 shadow-xl left-4 -top-6">
+          <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
+            <div class=" text-white flex items-center absolute rounded-full card-div-bg py-4 px-4 shadow-xl left-4 -top-6">
               <img
                 src={domeclublogo}
                 className="border-2 p-1 border-blue-400 object-contain mix-blend-difference object-center rounded-full h-12"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-lg w-fit bg-yellow-600 px-2 rounded-lg font-semibold my-2">Dome Club</p>
-              <p className="text-sm font-semibold my-2">By - Mech Department</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-lg w-fit bg-yellow-600 px-2 rounded-lg font-semibold my-2">Dome Club</p>
+              <p class="text-sm font-semibold my-2">By - Mech Department</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                   The official events club of "Department of Mech Eng" UIT RGPV
                   at
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
 
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
@@ -203,74 +203,74 @@ const DepartmentalClubs = () => {
                     href="https://www.instagram.com/the_domeclub_/"
                     target="_blank"
                   >
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>
             </div>
           </div>
-          <div className="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
-            <div className=" text-white flex items-center absolute rounded-full card-div-bg py-4 px-4 shadow-xl left-4 -top-6">
+          <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
+            <div class=" text-white flex items-center absolute rounded-full card-div-bg py-4 px-4 shadow-xl left-4 -top-6">
               <img
                 src={abhiveglogo}
                 className="border-2  border-blue-400 object-contain mix-blend-difference object-center rounded-full h-12"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-lg w-fit bg-green-800 px-2 rounded-lg font-semibold my-2">Abhiveg Team</p>
-              <p className="text-sm font-semibold my-2">By - ECE Department</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-lg w-fit bg-green-800 px-2 rounded-lg font-semibold my-2">Abhiveg Team</p>
+              <p class="text-sm font-semibold my-2">By - ECE Department</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                   Cultural Society of Electronics & Communication Department
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
 
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a href="https://www.instagram.com/abhiveg_/" target="_blank">
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>

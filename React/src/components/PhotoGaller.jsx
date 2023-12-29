@@ -43,330 +43,318 @@ const PhotoGaller = () => {
         </h1>
       </main>
 
-      <section className="">
-    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:pt-8 lg:pb-8 lg:px-6">
-        <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">The Memories To Relish</h2>
-            <p className="mb-4">Photographs, enchanting alchemists of joy, immortalize the essence of our cherished memories. In every college event, they crystallize extraordinary moments—capturing shared laughter, dreams, and the transient beauty of experiences. Each frame is a testament to the enduring magic that resides in the fleeting yet everlasting tapestry of life.</p>
-        </div>
-        <div className="grid grid-cols-2 gap-4 mt-8">
-            <img className="w-full rounded-lg border" src={image4} alt=""/>
-            <img className="mt-4 w-full lg:mt-10 rounded-lg border" src={image3} alt=""/>
-        </div>
-        
-    </div>
-</section>
+      
 	
      
-      <body className="antialiased  font-sans p-6">
-        <div className="container mx-auto">
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+      <body class="antialiased  font-sans p-6">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={nssimg}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link to='/nss-page' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     National Service Scheme : Nss{" "}
                   </h2>
-                  <p className="text-sm text-gray-300">
+                  <p class="text-sm text-gray-300">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src="https://i.ibb.co/nBRQgmq/IMG-20221013-204524-526.jpg"
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link to='/shankhnaadphotos' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Shankhnaad : The Cultural Gem{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src="https://mahasangram.in/static/media/DSC_0017_Original.b2fc8657a34884bd4b48.JPG"
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link to='/mahasangram-page' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Mahasangram : The Sport's Fest{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={nccimg}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link to='/ncc-page' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     National Cadet Corps : NCC{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg6}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link to='/senior-junior-photos' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Senior Junior Bond String Pearls{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg1}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link to='/batchmate-photos' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Batchmates : The Absolute Bond{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg13}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link to='/induction-page' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Induction Chapter : The Beginning{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg5}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     UIT Rgpv : Amazing Campus{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg2}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Departmental Events : Absolute Fun{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg11}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Various Seminars And Workshops{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg12}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Various Departments : Learning Hub{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>
                 </div>
               </a>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-              <a className="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-                <div className="relative pb-48 overflow-hidden">
+            <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+              <a class="c-card block border shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <div class="relative pb-48 overflow-hidden">
                   <img
-                    className="absolute inset-0 h-full w-full object-cover p-4 rounded "
+                    class="absolute inset-0 h-full w-full object-cover p-4 rounded "
                     src={grpimg9}
                     alt=""
                   />
                 </div>
-                <div className="p-4">
-                  <Link className="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
-                    View All <i className="ri-arrow-right-up-fill"></i>
+                <div class="p-4">
+                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                    View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
-                  <Link className="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
-                    <i className="ri-contract-right-fill"></i>
+                  <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
+                    <i class="ri-contract-right-fill"></i>
                   </Link>
-                  <h2 className="mt-2 mb-1 text-lg">
+                  <h2 class="mt-2 mb-1 text-lg">
                     Hostel Events : The Memories{" "}
                   </h2>
-                  <p className="text-sm">
+                  <p class="text-sm">
                     Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     Donec ullamcorper.
                   </p>

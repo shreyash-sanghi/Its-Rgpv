@@ -6,7 +6,7 @@ const FullEvent = ()=>{
     return(
         <>
         <Update/>
-        <PastEvent/>
+        {/* <PastEvent/> */}
         </>
     )
 }

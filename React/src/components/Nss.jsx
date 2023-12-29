@@ -21,20 +21,20 @@ const Nss = () => {
           </span>
         </h1>
       </main>
-      <section className="px-8">
-        <div className="container px-5 my-10 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card rounded-lg sm:flex-row flex-col items-center">
+      <section class="px-8">
+        <div class="container overflow-hidden px-5 my-10 mx-auto flex flex-wrap">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex 2 fest-card px-8 py-6 md:px-0 md:py-0 rounded-lg sm:flex-row flex-col items-center">
                 <div
-                  className="w-80 m-1 h-64 sm:mr-8 sm:mb-0 border-r-2 border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-80 m-1 h-64 sm:mr-8 sm:mb-0 border-r-2 border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{ backgroundImage: `url(${nssimg})` }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2">
+                <div class="flex-grow pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2">
                     Nss Unit UIT
                   </h2>
-                  <p className=" text-sm ">
+                  <p class=" text-sm ">
                     Its primary objective is to develop personality and
                     character of the student youth through voluntary community
                     service. 'Education through Service' is the purpose of the
@@ -44,65 +44,65 @@ const Nss = () => {
                   <a
                     href="https://www.instagram.com/nss_uitrgpv/"
                     target="blank"
-                    className="mt-3  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-3  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    <i className="ri-instagram-fill"></i>
+                    <i class="ri-instagram-fill"></i>
                   </a>
                   <a
                     href="https://nss.gov.in/"
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Offical Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Offical Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a onClick={() => {
                     alert("Registrations are closed !!")
                   }}
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-green-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-green-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Register <i className="ri-edit-line ml-1"></i>
+                    Register <i class="ri-edit-line ml-1"></i>
                   </a>
-                  <div className="flex items-center mt-4">
+                  <div class="flex items-center mt-4">
                     <a
                       href="https://www.instagram.com/uitrgpv_ncc/"
                       target="blank"
                     >
                       <img
-                        className="w-8 h-8 rounded-full mr-2 "
+                        class="w-8 h-8 rounded-full mr-2 "
                         src="https://seeklogo.com/images/N/nair-service-scheme-logo-FA829FD6C9-seeklogo.com.png"
                         alt="Avatar of Jonathan Reinink"
                       />
                     </a>
-                    <div className="text-sm">
+                    <div class="text-sm">
                       <a
                         href=""
                         target="blank"
-                        className=" font-medium leading-none hover:text-indigo-600"
+                        class=" font-medium leading-none hover:text-indigo-600"
                       >
                         Moto : Not Me But You
                       </a>
-                      <p className="text-gray-500">Since 2018 in UIT-Rgpv</p>
+                      <p class="text-gray-500">Since 2018 in UIT-Rgpv</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="p-4 lg:w-1/2 md:w-full ">
-              <div className="flex 2 fest-card rounded-lg sm:flex-row flex-col items-center">
+            <div class="p-4 lg:w-1/2 md:w-full ">
+              <div class="flex 2 fest-card px-8 py-6 md:px-0 md:py-0 rounded-lg sm:flex-row flex-col items-center">
                 <div
-                  className="w-80 m-1 h-64 sm:mr-8 sm:mb-0 border-r-2 border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
+                  class="w-80 m-1 h-64 sm:mr-8 sm:mb-0 border-r-2 border-blue-900 border-solid mb-4 inline-flex items-center justify-center fest-bg1 text-indigo-500 flex-shrink-0"
                   style={{
                     backgroundImage: `url(${nccimg})`,
                   }}
                 ></div>
-                <div className="flex-grow pr-4">
-                  <h2 className="text-xl title-font fest-heading text-center mb-2">
+                <div class="flex-grow pr-4">
+                  <h2 class="text-xl title-font fest-heading text-center mb-2">
                     Ncc Unit UIT
                   </h2>
-                  <p className="text-sm ">
+                  <p class="text-sm ">
                     It aims at creating a pool of an organized, trained and
                     motivated youth with leadership qualities in all walks of
                     life, who will serve the Nation regardless of which career
@@ -112,46 +112,46 @@ const Nss = () => {
                   <a
                     href="https://www.instagram.com/uitrgpv_ncc/"
                     target="blank"
-                    className="mt-3  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-3  text-white inline-flex items-center bg-pink-600 text-xs rounded-lg px-2 py-1"
                   >
-                    <i className="ri-instagram-fill"></i>
+                    <i class="ri-instagram-fill"></i>
                   </a>
                   <a
                     href="https://indiancc.nic.in/"
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-blue-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Offical Site <i className="ri-arrow-right-up-fill ml-1"></i>
+                    Offical Site <i class="ri-arrow-right-up-fill ml-1"></i>
                   </a>
                   <a onClick={() => {
                     alert("Registrations are closed !!")
                   }}
                     href=""
                     target="blank"
-                    className="mt-1 ml-1  text-white inline-flex items-center bg-green-600 text-xs rounded-lg px-2 py-1"
+                    class="mt-1 ml-1  text-white inline-flex items-center bg-green-600 text-xs rounded-lg px-2 py-1"
                   >
-                    Register <i className="ri-edit-line ml-1"></i>
+                    Register <i class="ri-edit-line ml-1"></i>
                   </a>
-                  <div className="flex items-center mt-4">
+                  <div class="flex items-center mt-4">
                     <a
                       href="https://www.instagram.com/uitrgpv_ncc/"
                       target="blank"
                     >
                       <img
-                        className="w-8 h-8 rounded-full mr-2 "
+                        class="w-8 h-8 rounded-full mr-2 "
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8jgznQeoTB5RUboDoDIv132D0sf3hEdbUSzv009NPSmtcQRYrqgLPR8t-gALISKJa3M&usqp=CAU"
                         alt="Avatar of Jonathan Reinink"
                       />
                     </a>
-                    <div className="text-sm">
+                    <div class="text-sm">
                       <a
                         href="https://www.instagram.com/uitrgpv_ncc/"
                         target="blank"
-                        className=" font-medium leading-none hover:text-indigo-600"
+                        class=" font-medium leading-none hover:text-indigo-600"
                       >
                         Moto : Unity And Discipline
                       </a>
-                      <p className="text-gray-500">Since 2018 in UIT-Rgpv</p>
+                      <p class="text-gray-500">Since 2018 in UIT-Rgpv</p>
                     </div>
                   </div>
                 </div>

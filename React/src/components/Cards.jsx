@@ -27,31 +27,31 @@ const Cards = () => {
           </span>
         </h1>
       </main>
-      <section className="px-12 cards-section overflow-hidden">
-        <div className="container px-5 pt-12 overflow-hidden mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards p-6">
+      <section class="px-12 cards-section overflow-hidden">
+        <div class="container px-5 pt-12 overflow-hidden mx-auto">
+          <div class="flex overflow-hidden flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards p-6">
                 <img
-                  className="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
+                  class="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
                   src={phoenixlogo}
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Creating New Dimensions
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team Phoenix</h2>
-                <p className="text-sm text-gray-300 ">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team Phoenix</h2>
+                <p class="text-sm text-gray-300 ">
                 Phoenix is a 3D Design and Animation Society of UIT-RGPV  which aims to foster creativity.
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a
                       href=""
                       target="_blank"
                     >
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
@@ -59,49 +59,49 @@ const Cards = () => {
                       href="https://www.linkedin.com/company/phoenix-rgpv/?originalSubdomain=in"
                       target="_blank"
                     >
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards  p-6">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards  p-6">
                 <img
-                  className="h-20 md:h-14 rounded w-full object-contain object-center mb-6"
+                  class="h-20 md:h-14 rounded w-full object-contain object-center mb-6"
                   src="https://ecellrgpv.com/assets/img/logo.png"
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Building An Enterprising India
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team E-Cell</h2>
-                <p className="text-sm text-gray-300">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team E-Cell</h2>
+                <p class="text-sm text-gray-300">
                 E-Cell aims to devlop an awareness and a culture of enterpreneurship in our college.
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a
                       href="https://www.instagram.com/ecell_rgpv/"
                       target="_blank"
                     >
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
@@ -109,49 +109,49 @@ const Cards = () => {
                       href="https://www.linkedin.com/company/ecellrgpv/"
                       target="_blank"
                     >
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="https://ecellrgpv.com/" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards  p-6">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards  p-6">
                 <img
-                  className="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
+                  class="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
                   src={Devoiclogo}
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Innovating Creativity
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">The Devoic</h2>
-                <p className="text-sm text-gray-300">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">The Devoic</h2>
+                <p class="text-sm text-gray-300">
                   Devoic helps students to upskill themselves and connect with the community to grow.
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a
                       href="https://www.instagram.com/thedevoic/"
                       target="_blank"
                     >
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
@@ -159,49 +159,49 @@ const Cards = () => {
                       href="https://www.linkedin.com/company/thedevoic/"
                       target="_blank"
                     >
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="https://bento.me/thedevoic" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards  p-6">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards  p-6">
                 <img
-                  className="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
+                  class="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
                   src="https://logogen.gdscasu.com/logos/gdsc-logo.png"
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Help Learn Connect
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team GDSC</h2>
-                <p className="text-sm text-gray-300">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team GDSC</h2>
+                <p class="text-sm text-gray-300">
                   Google Developer's Student Club focuses on cloud technologies to work with.
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a
                       href="https://www.instagram.com/gdsc_uitrgpv/"
                       target="_blank"
                     >
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
@@ -209,22 +209,22 @@ const Cards = () => {
                       href="https://www.linkedin.com/company/gdscuitrgpv/"
                       target="_blank"
                     >
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="https://gdscuitrgpv.vercel.app/" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
@@ -232,116 +232,116 @@ const Cards = () => {
             </div>
           </div>
         </div>
-        <div className="container px-5 pb-12 pt-1 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards p-6">
+        <div class="container px-5 pb-12 pt-1 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards p-6">
                 <img
-                  className="h-24 md:h-14 rounded w-full object-contain  object-center mb-6"
+                  class="h-24 md:h-14 rounded w-full object-contain  object-center mb-6"
                   src={code4alllogo}
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Code your way to success
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team Code4all</h2>
-                <p className="text-sm text-gray-300">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team Code4all</h2>
+                <p class="text-sm text-gray-300">
                 Code4All is a club of Problem Setters having Technical & Design Department.
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards mix-blend-difference p-6">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards mix-blend-difference p-6">
                 <img
-                  className="h-24 md:h-14 rounded w-full object-contain mix-blend-multiply object-center mb-6"
+                  class="h-24 md:h-14 rounded w-full object-contain mix-blend-multiply object-center mb-6"
                   src={fclogo}
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Developing personality traits
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Friday Colours</h2>
-                <p className="text-sm text-gray-300">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Friday Colours</h2>
+                <p class="text-sm text-gray-300">
                 Friday Colours provides a platform to show their talent mainly for all the literary enthusiasts.
 
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards  p-6">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards  p-6">
                 <img
-                  className="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
+                  class="h-24 md:h-14 rounded w-full object-contain object-center mb-6"
                   src={insynclogo}
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Promoting cultural diversity
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team Insync</h2>
-                <p className="text-sm text-gray-300">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg">Team Insync</h2>
+                <p class="text-sm text-gray-300">
                 Cultural Society which serves as a platform for youth to show their Cultural skills.
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
@@ -349,68 +349,68 @@ const Cards = () => {
                       href="https://www.linkedin.com/company/insync-cultural-society-of-uit-rgpv/"
                       target="_blank"
                     >
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="http://insyncatuit.cf/" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="club-cards  p-6">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="club-cards  p-6">
                 <img
-                  className="h-24 md:h-14 rounded w-full object-contain object-center mix-blend-difference mb-6"
+                  class="h-24 md:h-14 rounded w-full object-contain object-center mix-blend-difference mb-6"
                   src={codingclublogo}
                   alt="content"
                 />
-                <h3 className="tracking-widest text-xs font-medium title-font">
+                <h3 class="tracking-widest text-xs font-medium title-font">
                   Learn coding from Scratch
                 </h3>
-                <h2 className="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg ">
+                <h2 class="mb-2 mt-2 bg-pink-700 w-fit px-2 py-[1px] rounded-lg ">
                   Autotelic Society
                 </h2>
-                <p className="text-sm text-gray-300">
+                <p class="text-sm text-gray-300">
                 A Society that focuses on building coding culture in campus with problem solving mindset.
                 </p>
-                <div className="border-t-2 mt-2"></div>
+                <div class="border-t-2 mt-2"></div>
                 <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-instagram-line"></i>
+                      <i class="ri-instagram-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-linkedin-fill"></i>
+                      <i class="ri-linkedin-fill"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-twitter-x-line"></i>
+                      <i class="ri-twitter-x-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-links-line"></i>
+                      <i class="ri-links-line"></i>
                     </a>
                   </h1>
                   <h1 className="text-2xl">
                     <a href="" target="_blank">
-                      <i className="ri-whatsapp-fill"></i>
+                      <i class="ri-whatsapp-fill"></i>
                     </a>
                   </h1>
                 </div>
@@ -419,189 +419,189 @@ const Cards = () => {
           </div>
         </div>
       </section>
-      <div className="flex items-center justify-center">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-          <div className="relative py-6 px-6 rounded-3xl club-cards w-64 my-4 shadow-xl">
-            <div className=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 z-50 shadow-xl  left-4 -top-6">
+      <div class="flex items-center justify-center">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+          <div class="relative py-6 px-6 rounded-3xl club-cards w-64 my-4 shadow-xl">
+            <div class=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 z-50 shadow-xl  left-4 -top-6">
               <img
                 src={codehacklogo}
                 className="object-contain object-center p-1 rounded-full h-12 border-2 border-blue-400"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-xl font-semibold my-2">CodeHack Team</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-xl font-semibold my-2">CodeHack Team</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                 Community for freshers who are aspiring to learn to code from first year.
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="https://www.linkedin.com/company/codehack-uit-rgpv-bhopal/" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="relative py-6 px-6 club-cards rounded-3xl w-64 my-4 shadow-xl">
-            <div className=" text-white flex items-center card-div-bg absolute rounded-full py-4 px-4 shadow-xl left-4 -top-6">
+          <div class="relative py-6 px-6 club-cards rounded-3xl w-64 my-4 shadow-xl">
+            <div class=" text-white flex items-center card-div-bg absolute rounded-full py-4 px-4 shadow-xl left-4 -top-6">
               <img
                 src="https://logogen.gdscasu.com/logos/gdsc-logo.png"
                 className="object-contain object-center border-2 p-2 border-blue-400 rounded-full h-12"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-xl font-semibold my-2">Gdsc Soit</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-xl font-semibold my-2">Gdsc Soit</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                 Google Developer's Student Club focuses on cloud technologies to work with.
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
 
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
-            <div className=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 shadow-xl left-4 -top-6">
+          <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
+            <div class=" text-white flex items-center absolute card-div-bg rounded-full py-4 px-4 shadow-xl left-4 -top-6">
               <img
                 src={codingwizlogo}
                 className="object-contain mix-blend-difference border-2 p-2 border-blue-400 object-center rounded-full h-12"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-xl font-semibold my-2">Coding Wiz</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-xl font-semibold my-2">Coding Wiz</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                   Connect, engage & access a treasure of resources & mentorship for coding.
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
 
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
-            <div className=" text-white flex items-center absolute rounded-full card-div-bg py-4 px-4 shadow-xl left-4 -top-6">
+          <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 club-cards shadow-xl">
+            <div class=" text-white flex items-center absolute rounded-full card-div-bg py-4 px-4 shadow-xl left-4 -top-6">
               <img
                 src="https://miro.medium.com/v2/resize:fit:2400/1*1bmmA88dVbYzsS-K6_FMgQ.png"
                 className="border-2 p-2 border-blue-400 object-contain mix-blend-difference object-center rounded-full h-12"
                 alt=""
               />
             </div>
-            <div className="mt-8">
-              <p className="text-xl font-semibold my-2">Algozenith UIT</p>
-              <div className="flex space-x-2 text-gray-400 text-sm">
+            <div class="mt-8">
+              <p class="text-xl font-semibold my-2">Algozenith UIT</p>
+              <div class="flex space-x-2 text-gray-400 text-sm">
                 <p>
                  A dedciated group of learners who are passionate about (DSA) and (CP)
                 </p>
               </div>
-              <div className="border-t-2 mt-2"></div>
+              <div class="border-t-2 mt-2"></div>
 
               <div className="flex gap-2 mt-4 social-links w-fit rounded-lg px-2">
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-instagram-line"></i>
+                    <i class="ri-instagram-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-linkedin-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-twitter-x-line"></i>
+                    <i class="ri-twitter-x-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-links-line"></i>
+                    <i class="ri-links-line"></i>
                   </a>
                 </h1>
                 <h1 className="text-2xl">
                   <a href="" target="_blank">
-                    <i className="ri-whatsapp-fill"></i>
+                    <i class="ri-whatsapp-fill"></i>
                   </a>
                 </h1>
               </div>

@@ -16,15 +16,15 @@ const Update = () => {
     },
   ]);
   
-  const co =document.cookie.split('=');
-  const token = co[1];
+  // const co =document.cookie.split('=');
+  // const token = co[1];
 
   const allupdate = async () => {
 
     try {
-      const response = await axios.get(`http://its-rgpv-nmum.vercel.app/PastEvent/${token}`);
+      const response = await axios.get(`http://its-rgpv-nmum.vercel.app/PastEvent`);
       const data = response.data.data;
-      console.log(response)
+      console.log(response.status)
       data.map((object) => {
         final((sdata) => [
           ...sdata,
