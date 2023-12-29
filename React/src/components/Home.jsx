@@ -47,12 +47,12 @@ const Home = () => {
   }
 }
    
-console.log(token)
-  //  if(token !=='undefined'){
-  //   useEffect(() => {
-  //     getdata();
-  //   },[])
-  //  }
+// console.log(token)
+//    if(token != ''|| token !=='undefined'){
+//     useEffect(() => {
+//       getdata();
+//     },[])
+//    }
 
   return (
     <>
