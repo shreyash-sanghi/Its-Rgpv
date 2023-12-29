@@ -36,7 +36,7 @@ const RegData = (event)=>{
       const { GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey} = initial;
       // console.log( GroupName+" "+Fname+" "+CurrentLeader+" "+ Email+" "+ MobileNumber+" "+Password+" "+Cpassword+" "+secretkey)
       try {
-        const response = await Axios.post(`http://its-rgpv-nmum.vercel.app/registration/${id}`,{
+        const response = await Axios.post(`${process.env.Server_Path}/registration/${id}`,{
             GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey
          })
          alert("Club have sucessfully register..")
@@ -55,7 +55,7 @@ const RegData = (event)=>{
 
  const getrequest = async()=>{
   try {
-   const resp =  await Axios.get(`http://its-rgpv-nmum.vercel.app/registration/${id}`);
+   const resp =  await Axios.get(`${process.env.Server_Path}/registration/${id}`);
   } catch (error) {
     if(error.response.request.status === 401){
       navigate('/errorpage');

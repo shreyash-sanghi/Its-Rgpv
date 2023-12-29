@@ -64,7 +64,7 @@ const AddEvent = () => {
     const { EventBanner,EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink } = initial;
     formdata.append('file',initialfile);
     formdata.append('data', {EventBanner,EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink} );
-      const response = await axios.post("http://its-rgpv-nmum.vercel.app/uplodeData"
+      const response = await axios.post(`${process.env.Server_Path}/uplodeData`
       ,formdata,
       { headers: {'Content-Type': 'multipart/form-data'}})
 

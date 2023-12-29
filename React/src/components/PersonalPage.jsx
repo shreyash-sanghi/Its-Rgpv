@@ -21,12 +21,12 @@ const PersonalPage = () => {
   const getdata = async () => {
     try {
       
-      const response = await Axios.get(`http://its-rgpv-nmum.vercel.app/PersonalPage/${id}`,
+      const response = await Axios.get(`${process.env.Server_Path}/PersonalPage/${id}`,
       {
         withCredentials: true,
         credentials: 'include',
         headers: {
-          'Access-Control-Allow-Origin': "http://its-rgpv-nmum.vercel.app",
+          'Access-Control-Allow-Origin': `${process.env.Server_Path}`,
           'Access-Control-Allow-Credentials': true,
           'Content-Type': 'application/json'
         }
@@ -150,7 +150,7 @@ const PersonalPage = () => {
                           const con =  confirm("You have conform delete a event... ");
                            try {
                             if(con === true){
-                            await Axios.delete(`http://its-rgpv-nmum.vercel.app/PersonalPage/${info.id}`);
+                            await Axios.delete(`${process.env.Server_Path}/PersonalPage/${info.id}`);
                             toast("Successfully delete...")
                             final((initial)=>
                             initial.filter(e=>e.id != info.id)

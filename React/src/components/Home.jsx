@@ -28,7 +28,7 @@ const Home = () => {
 
   const getdata =async(e)=>{
     try{
-    const responce = await axios.get(`http://its-rgpv-nmum.vercel.app/${token}`)
+    const responce = await axios.get(`${process.env.Server_Path}/${token}`)
     const data = responce.data;
     const Mid = data.id;
     const Email = data.Email;

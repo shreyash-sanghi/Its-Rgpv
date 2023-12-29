@@ -8,7 +8,7 @@ const LogOut =()=>{
     const navigate = useNavigate(); 
      const getrequest = async(info)=>{
       try {
-        await axios.get('http://its-rgpv-nmum.vercel.app/logout')
+        await axios.get(`${process.env.Server_Path}/logout`)
         navigate('/');
     } catch (error) {
         alert("They have some error please Log Out again");

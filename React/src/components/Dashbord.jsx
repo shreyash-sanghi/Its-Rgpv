@@ -21,7 +21,7 @@ const Dashbord = () => {
   const mydata = async () => {
     try {
       
-      const response = await axios.get(`http://its-rgpv-nmum.vercel.app/Dashbord/${id}`);
+      const response = await axios.get(`${process.env.Server_Path}/Dashbord/${id}`);
     console.log(response);
     const registerData = response.data.data;
     registerData.map((object) => {
@@ -135,7 +135,7 @@ const Dashbord = () => {
                                 const con =  confirm("You have Confirm delete club id...")
                                 try{
                                     if(con === true){
-                                  await axios.delete(`http://its-rgpv-nmum.vercel.app/Dashbord/${Personaldata.Rid}`);
+                                  await axios.delete(`${process.env.Server_Path}/Dashbord/${Personaldata.Rid}`);
                                   toast("Successfully delete...")
                                   final((initial)=>
                                   initial.filter(e=>e.Rid!=Personaldata.Rid)

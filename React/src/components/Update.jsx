@@ -22,7 +22,7 @@ const Update = () => {
 
   const allupdate = async () => {
     try {
-      const response = await axios.get(`http://its-rgpv-nmum.vercel.app/events`);
+      const response = await axios.get(`${process.env.Server_Path}/events`);
       console.log(response.status);
       const data = response.data.data;
       data.map((object) => {
@@ -90,7 +90,7 @@ const Update = () => {
                     <img
                       className="h-[17rem] md:h-72 "
                       // className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out"
-                      src={`http://its-rgpv-nmum.vercel.app/images/`+info.Image}
+                      src={`${process.env.Server_Path}/images/`+info.Image}
                       width="540"
                       height="303"
                       alt="Blog post"
