@@ -9,7 +9,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 html {
   width: 100%;
@@ -132,7 +131,7 @@ background: linear-gradient(to left, #3202f3 0%, #f30082 100%);
   border: 1px solid white;
 }
 .stu-form {
-  background-image: url(https://www.icegif.com/wp-content/uploads/2023/08/icegif-354.gif);
+  background-image: url(https://cdn.dribbble.com/users/424937/screenshots/7102367/03-space-email-loop-dribbble.gif);
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur( 40px );
@@ -194,4 +193,20 @@ border: 1px solid gray;
 }
 .stats-cards {
   box-shadow: 0 6px 24px 0 rgb(31, 38, 135);
+}
+.startups-heading {
+  background: linear-gradient(to right, rgb(2, 60, 96), rgb(92, 17, 132));
+}
+.startupsection-bg {
+  background: linear-gradient(to left, rgb(2, 6, 47), rgb(33, 2, 50));
+}
+.startups-section-shadow {
+  box-shadow: 10px 6px 24px 0 rgb(148, 0, 136);
+}
+.memories-heading {
+  background: linear-gradient(to right, rgb(1, 43, 69), rgb(68, 12, 98));
+  width: fit-content;
+}
+.mobile-navbar {
+  background: linear-gradient(to left, rgb(2, 2, 22), rgb(13, 3, 18));
 }
