@@ -16,19 +16,9 @@ const path = require("path");
 
 
 
-
-//React Cors
-// app.use(cors(
-//   {
-//     origin:["http://its-rgpv-2m34.vercel.app"],
-//     credentials:true,
-//     optionsSuccessStatus:200
-//   }
-// ));
-
 app.use(cors(
   {
-    origin:["https//its-rgpv.vercel.app"]
+    origin:["https://its-rgpv.vercel.app"]
     ,methods:["POST","GET"],
     credentials:true, 
   }
