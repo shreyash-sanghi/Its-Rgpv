@@ -17,8 +17,6 @@ const Update = () => {
     },
   ]);
   
-  // const co =document.cookie.split('=');
-  // const token = co[1];
 
   const allupdate = async () => {
     try {
