@@ -72,7 +72,7 @@ const RegData = (event)=>{
     return(
         <>
       <div className="flex w-full justify-between">
-            <MainDashboardNav></MainDashboardNav>
+            {/* <MainDashboardNav></MainDashboardNav> */}
             <div className="w-5/6  justify-center items-center">
         <form ref={form}
         className="px-16 py-16 event-form text-white"
