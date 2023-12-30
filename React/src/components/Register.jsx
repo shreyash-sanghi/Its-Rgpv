@@ -40,7 +40,7 @@ const RegData = (event)=>{
             GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey
          })
          alert("Club have sucessfully register..")
-         navigate(`/maindashboard/${id}`)
+        //  navigate(`/maindashboard/${id}`)
          emailjs.sendForm(process.env.ServiceId,process.env.TemplateId, form.current, process.env.PublicKey )
           .then((result) => {
             console.log(result.text);
