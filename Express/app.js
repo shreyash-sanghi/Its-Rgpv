@@ -26,14 +26,14 @@ app.use(cors(
 
 
 //Tak Data Function
-app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', "https://its-rgpv.vercel.app"); 
-  res.setHeader('Access-Control-Allow-Credentials', "true");
-  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+// app.use(function(req, res, next) {
+//   res.setHeader('Access-Control-Allow-Origin', "https://its-rgpv.vercel.app"); 
+//   res.setHeader('Access-Control-Allow-Credentials', "true");
+//   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+//   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
-  next();
-});
+//   next();
+// });
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'))
