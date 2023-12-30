@@ -53,21 +53,21 @@ const RegData = (event)=>{
     } 
 }
 
- const getrequest = async()=>{
-  try {
-   const resp =  await Axios.get(`${process.env.Server_Path}/registration`);
-  } catch (error) {
-    if(error.response.request.status === 401){
-      navigate('/errorpage');
-  }
-  else{
-  alert(error);
-  }
-  }
- }
-  useEffect(()=>{
-    getrequest();
-  },[])
+//  const getrequest = async()=>{
+//   try {
+//    const resp =  await Axios.get(`${process.env.Server_Path}/registration`);
+//   } catch (error) {
+//     if(error.response.request.status === 401){
+//       navigate('/errorpage');
+//   }
+//   else{
+//   alert(error);
+//   }
+//   }
+//  }
+//   useEffect(()=>{
+//     getrequest();
+//   },[])
 
     return(
         <>
