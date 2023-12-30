@@ -20,6 +20,7 @@ const Register = require('../Model/RegModel');
 router.get("/",(req,res)=>{
   res.json("Hello")
 })
+
 //Club Login
 router.post("/login",async(req,res)=>{
   try {
