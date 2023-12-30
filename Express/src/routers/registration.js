@@ -6,14 +6,14 @@ const Register = require('../Model/RegModel');
 const  StuRegister = require('../Model/StuRegModel');
 
 
-router.get("/registration/:id", async(req,res)=>{
+router.get("/registration/:id",verify, async(req,res)=>{
     try {
      res.sendStatus(201);
     } catch (error) {
        res.status(404).send(error);
     }
   })
-  router.post("/registration/:id", async(req,res)=>{
+  router.post("/registration/:id",verify,async(req,res)=>{
     try {
       const {Password,Cpassword,GroupName,Fname, CurrentLeader, Email,MobileNumber,secretkey} = req.body;
       console.log(Password+" "+Cpassword+" "+GroupName+" "+Fname+" "+ CurrentLeader+" "+ Email+" "+MobileNumber+" "+secretkey)
