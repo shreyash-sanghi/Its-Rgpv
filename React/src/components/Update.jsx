@@ -20,7 +20,7 @@ const Update = () => {
 
   const allupdate = async () => {
     try {
-      const response = await axios.get(`${process.env.Server_Path}/events`);
+      const response = await axios.get(`${import.meta.env.VITE_Server_Path}/events`);
       console.log(response.status);
       const data = response.data.data;
       data.map((object) => {
