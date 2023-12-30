@@ -32,7 +32,7 @@ const StuReg = async (event)=>{
     event.preventDefault();
     const { Name, Email, MobileNumber,Year,Branch,StuPassword,Interest,College} = initial;
       try {
-        const response = await Axios.post(`${process.env.Server_Path}/Sregister`,{
+        const response = await Axios.post(`https://its-rgpv-nmum.vercel.app/Sregister`,{
           Name, Email, MobileNumber,Year,Branch,StuPassword,Interest,College
          })
          toast("Successfully registered...")

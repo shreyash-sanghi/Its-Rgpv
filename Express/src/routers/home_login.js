@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const Register = require('../Model/RegModel');
 
-router.get("/:token",async(req,res)=>{
+router.get("/",async(req,res)=>{
     try {
       console.log("Hello")
       console.log(req.cookie())
