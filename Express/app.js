@@ -9,10 +9,11 @@ const Secret_Page = require('./src/routers/SecretPage.js');
 const events_page = require('./src/routers/events.js');
 const home_login = require('./src/routers/home_login.js');
 const complaint_page = require('./src/routers/complaint.js');
-require("./src/DB/RegisterData.js")
+// const connectDB = require("./src/DB/RegisterData.js")
 const port = 4000 || process.env.PORT;
 const multer = require('multer');
 const path = require("path");
+const { default: mongoose } = require('mongoose');
 
 
 
@@ -27,6 +28,7 @@ app.use(cors(
 
 //Tak Data Function
 app.use(function(req, res, next) {
+  console.log("origin-->:",req.origin);
   res.header('Access-Control-Allow-Origin', "https://its-rgpv.vercel.app"); 
   res.header('Access-Control-Allow-Credentials', "true");
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
@@ -51,8 +53,13 @@ app.use(complaint_page);
 
 //Port Listening Logic
 
-app.listen(port,()=>{
-    console.log("Connection Sucessfully....")
+mongoose.connect(process.env.MONGO_URI)
+.then(()=>{
+  console.log(" Data-Base connection sucessfully....")
+  app.listen(port,()=>{
+  console.log("Connection Sucessfully....")
+  })
 })
+.catch((e)=>{console.log(e)})
 
 // module.exports = app
