@@ -9,7 +9,6 @@ const Secret_Page = require('./src/routers/SecretPage.js');
 const events_page = require('./src/routers/events.js');
 const home_login = require('./src/routers/home_login.js');
 const complaint_page = require('./src/routers/complaint.js');
-// const connectDB = require("./src/DB/RegisterData.js")
 const port = process.env.PORT || 4000 ;
 const multer = require('multer');
 const path = require("path");
@@ -28,7 +27,6 @@ app.use(cors(
 
 //Tak Data Function
 app.use(function (req, res, next) {
-  console.log("origin-->:", req.origin);
   res.header('Access-Control-Allow-Origin', "https://its-rgpv.vercel.app");
   res.header('Access-Control-Allow-Credentials', "true");
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');

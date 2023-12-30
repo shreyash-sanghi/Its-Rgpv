@@ -117,7 +117,6 @@ const images = path.join(__dirname, "../../public/images");
   // Show Event
   router.get("/events", async (req, res) => {
     try{
-      console.log("My name is event")
         const data = await AddEvent.find();
         res.json({data:data});
         res.sendStatus(201);
@@ -145,7 +144,6 @@ const images = path.join(__dirname, "../../public/images");
     try {
         const _id = req.params.id;
         const find = await AddEvent.findById({_id});
-        console.log(find)
         res.status(202).json({
         _id :_id,
         EventName:find.EventName,

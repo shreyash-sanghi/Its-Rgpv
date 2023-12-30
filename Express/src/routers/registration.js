@@ -16,7 +16,6 @@ router.get("/registration/:id",verify, async(req,res)=>{
   router.post("/registration/:id",verify,async(req,res)=>{
     try {
       const {Password,Cpassword,GroupName,Fname, CurrentLeader, Email,MobileNumber,secretkey} = req.body;
-      console.log(Password+" "+Cpassword+" "+GroupName+" "+Fname+" "+ CurrentLeader+" "+ Email+" "+MobileNumber+" "+secretkey)
       if(Password === Cpassword && secretkey===process.env.MainSecretKey){
       const reg = await Register.create({
           Password,Cpassword,GroupName,Fname, CurrentLeader, Email,MobileNumber
@@ -58,7 +57,7 @@ router.get("/StudentDashbord/:id",verify,async(req,res)=>{
     }
   })
   //Delete Student Id
-  router.delete("/StudentDashbord/:id",async(req,res)=>{
+router.delete("/StudentDashbord/:id",async(req,res)=>{
     try {
       const _id = req.params.id;
       const de =  await StuRegister.findByIdAndDelete(_id);
@@ -82,7 +81,7 @@ router.get("/Dashbord/:id",verify,async(req,res)=>{
   })
   
   //Delete Register Club
-  router.delete("/Dashbord/:id",async(req,res)=>{
+router.delete("/Dashbord/:id",async(req,res)=>{
     try {
       const _id = req.params.id;
       const de =  await Register.findByIdAndDelete(_id);
@@ -95,4 +94,5 @@ router.get("/Dashbord/:id",verify,async(req,res)=>{
   })
   
 
+  
 module.exports = router;
