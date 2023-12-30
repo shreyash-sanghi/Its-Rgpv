@@ -18,7 +18,7 @@ const [initial,final] = useState({
 })
 const StuData = (event)=>{
     const {name,value} = event.target;
-    // console.log(name,value);
+    console.log(name,value);
   final((finalValue)=>{
     return{
         ...finalValue,
@@ -32,7 +32,7 @@ const StuReg = async (event)=>{
     event.preventDefault();
     const { Name, Email, MobileNumber,Year,Branch,StuPassword,Interest,College} = initial;
       try {
-        const response = await Axios.post(`${import.meta.env.VITE_Server_Path}/Sregister`,{
+        const response = await Axios.post(`https://its-rgpv-nmum.vercel.app/Sregister`,{
           Name, Email, MobileNumber,Year,Branch,StuPassword,Interest,College
          })
          toast("Successfully registered...")

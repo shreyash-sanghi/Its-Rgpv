@@ -10,7 +10,7 @@ const Input = ()=>{
         formdata.append('file',initialfile)
          try{
             console.log(formdata);
-        axios.post(`${process.env.Server_Path}/uplode`,formdata)
+        axios.post(`https://its-rgpv-nmum.vercel.app/uplode`,formdata)
          }catch(error){
             alert(error)
             console.log(error);

@@ -22,18 +22,18 @@ const Login = () => {
        const Password = pass;
         try {
            Axios.create({
-              baseURL:`${process.env.Server_Path}`,
+              baseURL:`https://its-rgpv-nmum.vercel.app`,
               withCredentials:true
           })  
 
-          const response = await Axios.post(`${process.env.Server_Path}/login`,{
+          const response = await Axios.post(`https://its-rgpv-nmum.vercel.app/login`,{
                Email,Password
               },
               {
                 withCredentials: true,
                 credentials: 'include',
                 headers: {
-                  'Access-Control-Allow-Origin':`${process.env.Server_Path}`,
+                  'Access-Control-Allow-Origin':`https://its-rgpv-nmum.vercel.app`,
                   'Access-Control-Allow-Credentials':true,
                    'Content-Type': 'application/json'    
                 }

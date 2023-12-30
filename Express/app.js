@@ -10,7 +10,7 @@ const events_page = require('./src/routers/events.js');
 const home_login = require('./src/routers/home_login.js');
 const complaint_page = require('./src/routers/complaint.js');
 // const connectDB = require("./src/DB/RegisterData.js")
-const port = 4000 || process.env.PORT;
+const port = process.env.PORT || 4000 ;
 const multer = require('multer');
 const path = require("path");
 const { default: mongoose } = require('mongoose');
@@ -39,7 +39,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'))
 app.use(cookieParser());
-
 
 //Port Listening Logic
 mongoose.connect(process.env.MONGO_URI)

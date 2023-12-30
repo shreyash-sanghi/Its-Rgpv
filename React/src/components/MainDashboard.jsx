@@ -28,7 +28,7 @@ const MainDashboard = () => {
 
   const getdata = async () => {
     try {
-      const response = await axios.get(`${process.env.Server_Path}/MainDashbord/${id}`);
+      const response = await axios.get(`https://its-rgpv-nmum.vercel.app/MainDashbord/${id}`);
       toast("Successfully...");
       const requestData = response.data.request;
       requestData.map((object) => {

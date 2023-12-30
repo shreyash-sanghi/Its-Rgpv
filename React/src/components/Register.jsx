@@ -55,7 +55,7 @@ const RegData = (event)=>{
 
  const getrequest = async()=>{
   try {
-   const resp =  await Axios.get(`${process.env.Server_Path}/registration/${id}`);
+   const resp =  await Axios.get(`https://its-rgpv-nmum.vercel.app/registration/${id}`);
   } catch (error) {
     if(error.response.request.status === 401){
       navigate('/errorpage');

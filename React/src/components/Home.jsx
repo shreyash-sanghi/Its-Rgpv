@@ -26,26 +26,26 @@ const Home = () => {
   const token = co[1];
   
 
-  const getdata =async(e)=>{
-    try{
-    const responce = await axios.get(`${process.env.Server_Path}/${token}`)
-    const data = responce.data;
-    const Mid = data.id;
-    const Email = data.Email;
-    const HostEmail1= data.HostEmail1;
-    const HostEmail2 = data.HostEmail2;
-    if(Email===HostEmail1 ||Email===HostEmail2 ){
-    axios.defaults.headers.common["Authorization"] = token;
-    navigate(`/maindashboard/${Mid}`)
-   }else{
-    axios.defaults.headers.common["Authorization"] = token;
-    navigate(`/personalpage/${Mid}`)
-    }
-  }catch(error){
-    alert("They have some error please login again...")
-    navigate("/")
-  }
-}
+//   const getdata =async(e)=>{
+//     try{
+//     const responce = await axios.get(`${process.env.Server_Path}/${token}`)
+//     const data = responce.data;
+//     const Mid = data.id;
+//     const Email = data.Email;
+//     const HostEmail1= data.HostEmail1;
+//     const HostEmail2 = data.HostEmail2;
+//     if(Email===HostEmail1 ||Email===HostEmail2 ){
+//     axios.defaults.headers.common["Authorization"] = token;
+//     navigate(`/maindashboard/${Mid}`)
+//    }else{
+//     axios.defaults.headers.common["Authorization"] = token;
+//     navigate(`/personalpage/${Mid}`)
+//     }
+//   }catch(error){
+//     alert("They have some error please login again...")
+//     navigate("/")
+//   }
+// }
    
 // console.log(token)
 //    if(token != ''|| token !=='undefined'){
@@ -62,7 +62,6 @@ const Home = () => {
       <EventData/>
       <Cards></Cards>
       <Inzio></Inzio>
-      {/* <Nss></Nss> */}
       <Ourapp></Ourapp>
       <DepartmentalClubs></DepartmentalClubs>
       <MemoriesGlimpses></MemoriesGlimpses>
