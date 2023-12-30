@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const app =express();
+const app = express();
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const request_router = require('./src/routers/request.js');
@@ -19,17 +19,17 @@ const { default: mongoose } = require('mongoose');
 
 app.use(cors(
   {
-    origin:"https://its-rgpv.vercel.app"
-    ,methods:["POST","GET"],
-    credentials:true, 
+    origin: "https://its-rgpv.vercel.app"
+    , methods: ["POST", "GET"],
+    credentials: true,
   }
 ));
 
 
 //Tak Data Function
-app.use(function(req, res, next) {
-  console.log("origin-->:",req.origin);
-  res.header('Access-Control-Allow-Origin', "https://its-rgpv.vercel.app"); 
+app.use(function (req, res, next) {
+  console.log("origin-->:", req.origin);
+  res.header('Access-Control-Allow-Origin', "https://its-rgpv.vercel.app");
   res.header('Access-Control-Allow-Credentials', "true");
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
@@ -41,6 +41,14 @@ app.use(express.static('public'))
 app.use(cookieParser());
 
 
+//Port Listening Logic
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log(" Data-Base connection sucessfully....")
+
+  })
+  .catch((e) => { console.log(e) })
+
 
 app.use(request_router);
 app.use(total_registration);
@@ -49,17 +57,7 @@ app.use(events_page);
 app.use(home_login);
 app.use(complaint_page);
 
-
-
-//Port Listening Logic
-
-mongoose.connect(process.env.MONGO_URI)
-.then(()=>{
-  console.log(" Data-Base connection sucessfully....")
-  app.listen(port,()=>{
+app.listen(port, () => {
   console.log("Connection Sucessfully....")
-  })
 })
-.catch((e)=>{console.log(e)})
-
 // module.exports = app
