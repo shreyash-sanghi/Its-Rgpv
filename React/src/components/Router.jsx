@@ -42,8 +42,8 @@ const Router = () => {
           <Route exact path="/" Component={Home}></Route>
           <Route exact path="/login" Component={Login}></Route>
           <Route exact path="/Update" Component={FullEvent}></Route>
-          <Route exact path="/registration" Component={Register}></Route>
-          {/* <Route exact path="/registration/:id" Component={Register}></Route> */}
+          {/* <Route exact path="/registration" Component={Register}></Route> */}
+          <Route exact path="/registration/:id" Component={Register}></Route>
           <Route exact path="/sregister" Component={SRegister}></Route>
           <Route exact path="/AddEvent/:id" Component={AddEvent}></Route>
           <Route exact path="/personalpage/:id"Component={PersonalPage}></Route>

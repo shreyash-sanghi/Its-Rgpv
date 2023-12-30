@@ -36,7 +36,7 @@ const RegData = (event)=>{
       const { GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey} = initial;
       // console.log( GroupName+" "+Fname+" "+CurrentLeader+" "+ Email+" "+ MobileNumber+" "+Password+" "+Cpassword+" "+secretkey)
       try {
-        const response = await Axios.post(`https://its-rgpv-nmum.vercel.app/registration`,{
+        const response = await Axios.post(`https://its-rgpv-nmum.vercel.app/registration/${id}`,{
             GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey
          })
          alert("Club have sucessfully register..")
@@ -53,26 +53,26 @@ const RegData = (event)=>{
     } 
 }
 
-//  const getrequest = async()=>{
-//   try {
-//    const resp =  await Axios.get(`${process.env.Server_Path}/registration`);
-//   } catch (error) {
-//     if(error.response.request.status === 401){
-//       navigate('/errorpage');
-//   }
-//   else{
-//   alert(error);
-//   }
-//   }
-//  }
-//   useEffect(()=>{
-//     getrequest();
-//   },[])
+ const getrequest = async()=>{
+  try {
+   const resp =  await Axios.get(`${process.env.Server_Path}/registration/${id}`);
+  } catch (error) {
+    if(error.response.request.status === 401){
+      navigate('/errorpage');
+  }
+  else{
+  alert(error);
+  }
+  }
+ }
+  useEffect(()=>{
+    getrequest();
+  },[])
 
     return(
         <>
       <div className="flex w-full justify-between">
-            {/* <MainDashboardNav></MainDashboardNav> */}
+            <MainDashboardNav></MainDashboardNav>
             <div className="w-5/6  justify-center items-center">
         <form ref={form}
         className="px-16 py-16 event-form text-white"
