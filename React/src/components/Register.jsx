@@ -36,7 +36,7 @@ const RegData = (event)=>{
       const { GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey} = initial;
       // console.log( GroupName+" "+Fname+" "+CurrentLeader+" "+ Email+" "+ MobileNumber+" "+Password+" "+Cpassword+" "+secretkey)
       try {
-        const response = await Axios.post(`${process.env.Server_Path}/registration`,{
+        const response = await Axios.post(`https://its-rgpv-nmum.vercel.app/registration`,{
             GroupName,Fname,CurrentLeader, Email, MobileNumber,Password,Cpassword,secretkey
          })
          alert("Club have sucessfully register..")
