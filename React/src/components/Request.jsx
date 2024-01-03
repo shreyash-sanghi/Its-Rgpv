@@ -34,15 +34,12 @@ const Request = () => {
     })
   }
 
-  const myform = document.getElementById("form");
   const ReqSubmit = async (event) => {
     event.preventDefault();
-    const formdata = new FormData(myform);
+     const image ="Hello";
     const { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink } = initial;
     try {
-      formdata.append('file', initialfile);
-      formdata.append('data', { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink});
-      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/request`, formdata,
+      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/request`,{ ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, image,RegLink}
       )
       if (response.status === 202) {
         toast("Thank You for request after verification it will we a up comming event..")
