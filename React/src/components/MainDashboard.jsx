@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import MainDashboardNav from "./MainDashboardNav";
+import {ref,getStorage ,getDownloadURL} from "firebase/storage";
 
 const MainDashboard = () => {
   const { id } = useParams();
@@ -25,7 +26,7 @@ const MainDashboard = () => {
     Email: "",
     Image:""
   }])
-
+  const [initial_url,final_url] = useState("");
   const getdata = async () => {
     try {
       const response = await axios.get(`https://its-rgpv-nmum.vercel.app/MainDashbord/${id}`);
@@ -124,13 +125,19 @@ const MainDashboard = () => {
                       </thead>
                       {initial.map((reqData) => {
                         console.log(reqData.Image)
+                        const storage = getStorage();
+                        const imgref = ref(storage,`files/${reqData.Image}`);
+                        getDownloadURL(imgref)
+                        .then((url) => {
+                          final_url(url)
+                        })
                         if(!reqData.id) return null;
                         return (<>
                           <tbody className="bg-gray-800">
                             <tr className="bg-black bg-opacity-20 align-middle my-auto ">
                               <td className="pl-4">1</td>
                               <td className="px-2 py-4 whitespace-nowrap">
-                                <img  src={reqData.Image} className="w-20 h-10"/> </td>
+                                <img  src={initial_url} className="w-20 h-10"/> </td>
                               <td className="flex px-4 py-4 whitespace-nowrap">
                                 <span className="ml-1 pt-2 font-medium">{reqData.EventName}</span></td>
                               <td className="px-4 py-4 whitespace-nowrap">{reqData.Name}</td>
