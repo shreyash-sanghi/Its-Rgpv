@@ -42,6 +42,7 @@ const Request = () => {
     const storage = getStorage();
      const image = `${initialfile.name + v4()}`;
     const imgref = ref(storage,`files/${image}`);
+
     console.log(imgref)
     try {
      await uploadBytes(imgref,initialfile)
