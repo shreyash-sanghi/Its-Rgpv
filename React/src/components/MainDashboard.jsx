@@ -130,7 +130,7 @@ const MainDashboard = () => {
                             <tr className="bg-black bg-opacity-20 align-middle my-auto ">
                               <td className="pl-4">1</td>
                               <td className="px-2 py-4 whitespace-nowrap">
-                                <img  src={`http://its-rgpv.vercel.app/images/`+reqData.Image} className="w-20 h-10"/> </td>
+                                <img  src={reqData.Image} className="w-20 h-10"/> </td>
                               <td className="flex px-4 py-4 whitespace-nowrap">
                                 <span className="ml-1 pt-2 font-medium">{reqData.EventName}</span></td>
                               <td className="px-4 py-4 whitespace-nowrap">{reqData.Name}</td>
@@ -153,7 +153,7 @@ const MainDashboard = () => {
                                 </Link>
 
                                 <button id="deletebutton" onClick={async () => {
-                                  const response = await axios.delete(`http://its-rgpv.vercel.app/Request/${reqData.id}`);
+                                  const response = await axios.delete(`https://its-rgpv.vercel.app/Request/${reqData.id}`);
                                  toast("Request have been delete...")
                                   final((initial)=>
                                     initial.filter(e=>e.id!=reqData.id)
