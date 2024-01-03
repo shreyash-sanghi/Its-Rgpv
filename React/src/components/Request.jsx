@@ -5,6 +5,9 @@ import emailjs from '@emailjs/browser';
 import './Request.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ref, uploadBytes ,getStorage} from "firebase/storage";
+import { imageDb } from "./Eventfile";
+import {v4} from 'uuid';
 
 const Request = () => {
   const navigate = useNavigate();
@@ -34,15 +37,21 @@ const Request = () => {
     })
   }
 
-  const myform = document.getElementById("form");
+  // const myform = document.getElementById("form");
   const ReqSubmit = async (event) => {
     event.preventDefault();
-    const formdata = new FormData(myform);
+    const storage = getStorage();
+    const image = `${initialfile.name + v4()}`;
+    const imgref = ref(storage,`files/${image}`);
+    try {
+      uploadBytes(imgref,initialfile)
+    } catch (error) {
+      toast("Your Banner is not uplode")
+    }
     const { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink } = initial;
     try {
-      formdata.append('file', initialfile);
-      formdata.append('data', { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink});
-      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/request`, formdata,
+      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/request`, 
+       { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink,image}
       )
       if (response.status === 202) {
         toast("Thank You for request after verification it will we a up comming event..")
@@ -58,6 +67,8 @@ const Request = () => {
       toast(error.message);
     }
   }
+
+
   return (
     <>
       <div className="background">
