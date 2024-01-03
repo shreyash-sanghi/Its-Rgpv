@@ -6,7 +6,7 @@ import './Request.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ref, uploadBytes ,getStorage} from "firebase/storage";
-import { imageDb } from "./Eventfile";
+import { imageDb } from "./Config"
 import {v4} from 'uuid';
 
 const Request = () => {
@@ -45,7 +45,7 @@ const Request = () => {
 
     console.log(imgref)
     try {
-     await uploadBytes(imgref,initialfile)
+      uploadBytes(imgref,initialfile)
     } catch (error) {
       toast("Your Banner is not uplode")
     }
