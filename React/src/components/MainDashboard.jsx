@@ -160,12 +160,11 @@ const MainDashboard = () => {
                                 </Link>
 
                                 <button id="deletebutton" onClick={async () => {
-                                  const response = await axios.delete(`https://its-rgpv.vercel.app/Request/${reqData.id}`);
+                                  const response = await axios.delete(`https://its-rgpv-nmum.vercel.app/Request/${reqData.id}`);
                                  toast("Request have been delete...")
                                   final((initial)=>
                                     initial.filter(e=>e.id!=reqData.id)
                                   )
-                                  // navigate(`/maindashboard/${id}`)
                                 }}>
                                   <svg
                                     className="mx-2 w-4 fill-current text-red-500 curs"
