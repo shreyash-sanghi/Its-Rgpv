@@ -5,26 +5,12 @@ const multer = require('multer');
 const path = require("path");
 
 
-const images = path.join(__dirname, "../../public/Images");
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    return cb(null, images)
-  }
-  ,
-  filename: function (req, file, cb) {
-    return cb(null, `${Date.now()}_${file.originalname}`)
-  }
-})
-
-const uplode = multer({ storage })
-
-router.post("/request", uplode.single('file'), async (req, res) => {
+router.post("/request", async (req, res) => {
 
   try {
-    const { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink } = req.body;
+    const { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink,image } = req.body;
     await Request.create({
-      ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink,
-      image:req.file.filename,
+      ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink,image
     })
     res.sendStatus(202);
   } catch (error) {
