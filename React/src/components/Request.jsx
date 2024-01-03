@@ -37,12 +37,10 @@ const Request = () => {
     })
   }
 
-<<<<<<< HEAD
-  // const myform = document.getElementById("form");
   const ReqSubmit = async (event) => {
     event.preventDefault();
     const storage = getStorage();
-    const image = `${initialfile.name + v4()}`;
+     const image = `${initialfile.name + v4()}`;
     const imgref = ref(storage,`files/${image}`);
     try {
       uploadBytes(imgref,initialfile)
@@ -53,14 +51,6 @@ const Request = () => {
     try {
       const response = await axios.post(`https://its-rgpv-nmum.vercel.app/request`, 
        { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink,image}
-=======
-  const ReqSubmit = async (event) => {
-    event.preventDefault();
-     const image ="Hello";
-    const { ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, RegLink } = initial;
-    try {
-      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/request`,{ ReqEmail, EventName, Discreption, Place, EDate, Time, Name, MobileNumber, image,RegLink}
->>>>>>> 95bd3baf24f0f60292ab8c192d2813071ac8f7da
       )
       if (response.status === 202) {
         toast("Thank You for request after verification it will we a up comming event..")
