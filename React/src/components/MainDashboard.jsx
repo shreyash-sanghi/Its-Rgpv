@@ -26,7 +26,7 @@ const MainDashboard = () => {
     Email: "",
     Image:""
   }])
-  const [initial_url,final_url] = useState("");
+  const [initial_url,final_url] = useState();
   const getdata = async () => {
     try {
       const response = await axios.get(`https://its-rgpv-nmum.vercel.app/MainDashbord/${id}`);
