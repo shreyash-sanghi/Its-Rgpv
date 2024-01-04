@@ -33,6 +33,12 @@ const MainDashboard = () => {
       toast("Successfully...");
       const requestData = response.data.request;
       requestData.map((object) => {
+        const storage = getStorage();
+        const imgref = ref(storage,`files/${object.image}`);
+        getDownloadURL(imgref)
+        .then((url) => {
+          final_url(url)
+        })
       final((info) => [
         ...info, {
           id: object._id,
@@ -46,7 +52,7 @@ const MainDashboard = () => {
           EventBanner: object.EventBanner,
           Email: object.ReqEmail,
           MobileNumber: object.MobileNumber,
-          Image: object.image,
+          Image: initial_url,
         }
       ])
     })
@@ -124,19 +130,14 @@ const MainDashboard = () => {
                         </tr>
                       </thead>
                       {initial.map((reqData) => {
-                        const storage = getStorage();
-                        const imgref = ref(storage,`files/${reqData.Image}`);
-                        getDownloadURL(imgref)
-                        .then((url) => {
-                          final_url(url)
-                        })
+              
                         if(!reqData.id) return null;
                         return (<>
                           <tbody className="bg-gray-800">
                             <tr className="bg-black bg-opacity-20 align-middle my-auto ">
                               <td className="pl-4">1</td>
                               <td className="px-2 py-4 whitespace-nowrap">
-                                <img  src={initial_url} className="w-20 h-10"/> </td>
+                                <img  src={reqData.Image} className="w-20 h-10"/> </td>
                               <td className="flex px-4 py-4 whitespace-nowrap">
                                 <span className="ml-1 pt-2 font-medium">{reqData.EventName}</span></td>
                               <td className="px-4 py-4 whitespace-nowrap">{reqData.Name}</td>
