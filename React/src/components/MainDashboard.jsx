@@ -33,7 +33,6 @@ const MainDashboard = () => {
       toast("Successfully...");
       const requestData = response.data.request;
       requestData.map((object) => {
-        console.log(object.image);
         const storage = getStorage();
         const imgref = ref(storage,`files/${object.image}`);
         getDownloadURL(imgref)
@@ -56,6 +55,7 @@ const MainDashboard = () => {
           Image: initial_url,
         }
       ])
+      console.log(initial_url)
     })
   } catch (error) {
   if(error.response.request.status === 401){
