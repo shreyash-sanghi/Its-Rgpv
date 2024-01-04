@@ -27,7 +27,7 @@ const MainDashboard = () => {
     Image:""
   }])
   const [initial_url,final_url] = useState("");
-  
+
   const getdata = async () => {
     try {
       const response = await axios.get(`https://its-rgpv-nmum.vercel.app/MainDashbord/${id}`);
@@ -36,8 +36,8 @@ const MainDashboard = () => {
       requestData.map((object) => {
         const storage = getStorage();
         const imgref = ref(storage,`files/${object.image}`);
-        getDownloadURL(imgref)
-        .then((url) => {
+        console.log(imgref)
+        getDownloadURL(imgref).then((url) => {
           console.log(url)
           final_url(url)
         })
@@ -57,7 +57,6 @@ const MainDashboard = () => {
           Image: initial_url,
         }
       ])
-      console.log(initial_url)
     })
   } catch (error) {
   if(error.response.request.status === 401){
