@@ -26,13 +26,14 @@ const MainDashboard = () => {
     Email: "",
     Image:""
   }])
-  const [initial_url,final_url] = useState();
+  const [initial_url,final_url] = useState("");
   const getdata = async () => {
     try {
       const response = await axios.get(`https://its-rgpv-nmum.vercel.app/MainDashbord/${id}`);
       toast("Successfully...");
       const requestData = response.data.request;
       requestData.map((object) => {
+        console.log(object.image);
         const storage = getStorage();
         const imgref = ref(storage,`files/${object.image}`);
         getDownloadURL(imgref)

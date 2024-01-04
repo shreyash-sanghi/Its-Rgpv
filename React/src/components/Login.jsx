@@ -40,7 +40,6 @@ const Login = () => {
               }
               )
           const token = response.data.token;
-          console.log(response);
           Axios.defaults.headers.common["Authorization"] = token;
           const Email2 = response.data.Email;
           const id = response.data.id;
