@@ -19,7 +19,7 @@ const { default: mongoose } = require('mongoose');
 app.use(cors(
   {
     origin: "https://its-rgpv.vercel.app"
-    , methods: ["POST", "GET"],
+    , methods: ["POST", "GET","OPTIONS", "PUT", "DELETE"],
     credentials: true,
   }
 ));
