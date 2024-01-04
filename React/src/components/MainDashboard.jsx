@@ -124,7 +124,6 @@ const MainDashboard = () => {
                         </tr>
                       </thead>
                       {initial.map((reqData) => {
-                        console.log(reqData.Image)
                         const storage = getStorage();
                         const imgref = ref(storage,`files/${reqData.Image}`);
                         getDownloadURL(imgref)

@@ -22,7 +22,7 @@ const PastEventDashboard =()=>{
       Prize: "",
       EventBanner: "",
     }])
-    const [inicount,fincount] = useState(0);
+    // const [inicount,fincount] = useState(0);
 
     const mydata = async () => {
       try{
@@ -87,9 +87,7 @@ const PastEventDashboard =()=>{
     //   }
     // })
 
-    const countEvent = ()=>{
-        fincount =inicount+1; 
-    }
+  
   
 
 
@@ -160,7 +158,7 @@ const PastEventDashboard =()=>{
                         return(<>
                       <tbody className="bg-gray-800">
                         <tr className="bg-black bg-opacity-20">
-                          <td className="pl-4">{inicount}</td>
+                          {/* <td className="pl-4">{inicount}</td> */}
                           <td className="px-6 py-4 whitespace-nowrap">{Personaldata.EventBanner}</td>
                           <td className="flex px-6 py-4 whitespace-nowrap">
                             <span className="ml-2 font-medium">{Personaldata.EventName}</span>
