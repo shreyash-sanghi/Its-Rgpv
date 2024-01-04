@@ -18,7 +18,7 @@ const { default: mongoose } = require('mongoose');
 
 app.use(cors(
   {
-    origin: "https://its-rgpv.vercel.app"
+    origin: ["https://its-rgpv.vercel.app", "https://its-rgpv-nmum.vercel.app"]
     , methods: ["POST", "GET","OPTIONS", "PUT", "DELETE"],
     credentials: true,
   }
