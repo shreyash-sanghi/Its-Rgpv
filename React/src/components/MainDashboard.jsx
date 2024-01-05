@@ -71,12 +71,12 @@ const MainDashboard = () => {
 
   return (
     <>
-      <div className="flex w-full justify-between overflow-x-scroll over lg:overflow-x-hidden ">
+      <div className="flex w-full justify-between overflow-x-scroll over scrollbar-hide lg:overflow-x-hidden ">
         <MainDashboardNav></MainDashboardNav>
       
 
         <div className=" w-5/6  justify-center items-center   ">
-          <div className="flex  whitespace-nowrap overflow-auto scrollbar-hide flex-col items-center justify-center bg-gray-900 py-4">
+          <div className="flex  whitespace-nowrap   flex-col items-center justify-center bg-gray-900 py-4">
             <h1 className="text-lg text-gray-400 font-medium">
               Event Request
             </h1>
