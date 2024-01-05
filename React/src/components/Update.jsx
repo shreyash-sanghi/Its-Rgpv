@@ -21,7 +21,6 @@ const Update = () => {
   const allupdate = async () => {
     try {
       const response = await axios.get(`https://its-rgpv-nmum.vercel.app/events`);
-      console.log(response.status);
       const data = response.data.data;
       data.map((object) => {
         final((sdata) => [

@@ -36,9 +36,7 @@ const MainDashboard = () => {
       requestData.map((object) => {
         const storage = getStorage();
         const imgref = ref(storage,`files/${object.image}`);
-        console.log(imgref)
         getDownloadURL(imgref).then((url) => {
-          console.log(url)
           final_url(url)
         })
       final((info) => [

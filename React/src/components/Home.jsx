@@ -6,35 +6,35 @@ import Cards from "./Cards";
 import SportsGroup from "./SportsGroup.jsx";
 import Fest from "./Fest.jsx";
 import Nss from './Nss'
+import EventData from "./EventData.jsx";
 import Team from "./Team";
 import Footer from "./Footer";
+import Navbar from "./Navbar.jsx";
 import Inzio from "./Inzio";
 import MemoriesGlimpses from "./MemoriesGlimpses.jsx";
 import Placement from "./Placement.jsx";
+import MainDashboard from "./MainDashboard.jsx";
+import Update from "./Update.jsx";
 import DepartmentalClubs from "./DepartmentalClubs";
-import Navbar from './Navbar.jsx'
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import EventData from "./EventData.jsx"
 import StartupsSection from "./StartupsSection.jsx";
-import DepartmentsSection from "./DepartmentsSection.jsx";
+import { useNavigate } from "react-router-dom";
+import DepartmentsSection from "./DepartmentsSection"
+
 
 const Home = () => {
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
-  const co =document.cookie.split('=');
-  const token = co[1];
+//   const co =document.cookie.split('=');
+//   const token = co[1];
   
-
 //   const getdata =async(e)=>{
 //     try{
-//     const responce = await axios.get(`${process.env.Server_Path}/${token}`)
+//     const responce = await axios.get(`http://127.0.0.1:4000/${token}`)
 //     const data = responce.data;
 //     const Mid = data.id;
 //     const Email = data.Email;
-//     const HostEmail1= data.HostEmail1;
-//     const HostEmail2 = data.HostEmail2;
-//     if(Email===HostEmail1 ||Email===HostEmail2 ){
+//     console.log(responce)
+//     if(Email==='shreyash123jain@gmail.com'){
 //     axios.defaults.headers.common["Authorization"] = token;
 //     navigate(`/maindashboard/${Mid}`)
 //    }else{
@@ -46,35 +46,40 @@ const Home = () => {
 //     navigate("/")
 //   }
 // }
-   
-// console.log(token)
-//    if(token != ''|| token !=='undefined'){
+
+//    if(token !== ''|| token==='undefined'){
 //     useEffect(() => {
 //       getdata();
 //     },[])
 //    }
 
+
+
   return (
     <>
+    {/* <MainDashboard></MainDashboard> */}
+    {/* <Update></Update> */}
+    
     <Navbar></Navbar>
-    <Hero></Hero>
+      <Hero></Hero>
       <Fest></Fest>
-      <EventData/>
+      <EventData></EventData>
       <Cards></Cards>
       <Inzio></Inzio>
+      {/* <Nss></Nss> */}
       <Ourapp></Ourapp>
       <DepartmentalClubs></DepartmentalClubs>
       <MemoriesGlimpses></MemoriesGlimpses>
-      <StartupsSection/>
+      <StartupsSection></StartupsSection>
       <SportsGroup></SportsGroup>
       <Partners></Partners>
-      <DepartmentsSection/>
+      <DepartmentsSection></DepartmentsSection>
       <Placement></Placement>
+      
       <Team></Team>
       <Footer></Footer>
     </>
   );
-   
 };
 
 export default Home;

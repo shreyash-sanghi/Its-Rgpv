@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect,useRef } from 'react';
 import { useParams,useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import {ref,getStorage ,getDownloadURL} from "firebase/storage";
 
 const VarifyEvent = () => {
     const { id, Mid } = useParams();
@@ -19,7 +20,7 @@ const VarifyEvent = () => {
         Email: "",
         Image:""
     })
-
+    const [initial_url,final_url] = useState("");
     const [ini, fin] = useState("");
 
     const EventData = (event) => {
@@ -55,6 +56,12 @@ const VarifyEvent = () => {
     }
     
     useEffect(() => {
+        const storage = getStorage();
+        const imgref = ref(storage,`files/${ini.Image}`);
+        getDownloadURL(imgref)
+        .then((url) => {
+          final_url(url)
+        })
         getdata();
     }, [])
 
@@ -210,7 +217,9 @@ const VarifyEvent = () => {
                         </label>
                     </div>
                     <div className="px-2 py-4 whitespace-nowrap">
-                   <img  src={`https://its-rgpv-nmum.vercel.app/images/`+ini.Image} className="w-[13rem] h-[12rem]"/> </div>
+
+
+                   <img  src={initial_url} className="w-[13rem] h-[12rem]"/> </div>
                    </div>
                 <div className="grid md:grid-cols-2 md:gap-6">
                     <div className="relative z-0 w-full mb-6 group">
