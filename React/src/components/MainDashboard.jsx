@@ -71,7 +71,7 @@ const MainDashboard = () => {
 
   return (
     <>
-      <div className="flex w-full justify-between ">
+      <div className="flex w-full justify-between overflow-x-scroll over lg:overflow-x-hidden ">
         <MainDashboardNav></MainDashboardNav>
       
 
