@@ -1,15 +1,33 @@
 import React,{useState,useEffect} from 'react'
 import Navbar from './components/MiainFile'
-import axios from 'axios';
-// import Eventadd from '../../React/EventX/src/components/Eventadd'
+import BounceLoader from "react-spinners/BounceLoader";
 
 const App = () => {
-  axios.defaults.withCredentials = true;
+  
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
   return (
     <>
-    <Navbar/>
+      {loading ? ( // Checking if loading is true
+        <div className="h-screen w-full flex items-center justify-center">
+          <BounceLoader // For Loading page animation
+            color={"skyblue"}
+            loading={loading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <Navbar/>
+      )}
     </>
-  )
+  );
 }
 
 export default App
