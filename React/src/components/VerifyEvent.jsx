@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect,useRef } from 'react';
 import { useParams,useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import {ref,getStorage ,getDownloadURL} from "firebase/storage";
+import {ref,getStorage ,getDownloadURL,deleteObject} from "firebase/storage";
 
 const VarifyEvent = () => {
     const { id, Mid } = useParams();
@@ -18,7 +18,8 @@ const VarifyEvent = () => {
         Name: "",
         RegLink: "",
         Email: "",
-        Image:""
+        Image:"",
+        ImgName:""
     })
     const [initial_url,final_url] = useState("");
     const [ini, fin] = useState("");
@@ -39,7 +40,9 @@ const VarifyEvent = () => {
     const getdata = async () => {
         const response = await axios.get(`https://its-rgpv-nmum.vercel.app/VerifyEvent/${id}`);
         const resdata = response.data;
-        console.log(resdata);
+        const storage = getStorage();
+        const imgref = ref(storage,`files/${resdata.Image}`);
+        getDownloadURL(imgref).then((url) => {
         initial2((info) => {
             info.EventName = resdata.EventName
             info.Discreption = resdata.Discreption
@@ -49,9 +52,11 @@ const VarifyEvent = () => {
             info.Name = resdata.Name
             info.RegLink = resdata.RegLink
             info.Email = resdata.Email
-            info.Image = resdata.Image
+            info.Image = url
+            info.ImgName = resdata.Image
   
         })
+    })
         fin(initial1);
     }
     
@@ -200,7 +205,7 @@ const VarifyEvent = () => {
                         </label>
                     </div>
                     <div className="hidden relative z-0 w-full mb-6 group">
-                        <input 
+                        {/* <input 
                             type="text"
                             name="Image"
                             value={ini.Image}
@@ -208,18 +213,18 @@ const VarifyEvent = () => {
                             id="event-input floating_phone"
                             className="py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 event-input focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                             placeholder=" "
-                        />
-                        <label
+                        /> */}
+                        {/* <label
                             for="floating_phone"
                             className="peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                         >
                             EventBanner
-                        </label>
+                        </label> */}
                     </div>
                     <div className="px-2 py-4 whitespace-nowrap">
 
 
-                   <img  src={initial_url} className="w-[13rem] h-[12rem]"/> </div>
+                   <img  src={ini.Image} className="w-[13rem] h-[12rem]"/> </div>
                    </div>
                 <div className="grid md:grid-cols-2 md:gap-6">
                     <div className="relative z-0 w-full mb-6 group">
@@ -244,7 +249,6 @@ const VarifyEvent = () => {
                             type="email"
                             name="Email"
                             value={ini.Email}
-                            // accept="image/*"
                             onChange={EventData}
                             id="floating_company"
                             className="event-input block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -285,7 +289,11 @@ const VarifyEvent = () => {
 
 
                 <button id="deletebutton" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800" onClick={async () => {
-                                  const response = await axios.delete(`https://its-rgpv-nmum.vercel.app/Request/${id}`);
+                                  
+                                  const storage = getStorage();
+                                  const desertRef = ref(storage, `files/${ini.ImgName}`);
+                                 await deleteObject(desertRef)
+                                 await axios.delete(`https://its-rgpv-nmum.vercel.app/Request/${id}`);
                                  toast("Request have been delete...")
                               setTimeout(()=>{
                               navigate(`/maindashboard/${Mid}`)

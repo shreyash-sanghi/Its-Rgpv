@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import MainDashboardNav from "./MainDashboardNav";
-import {ref,getStorage ,getDownloadURL} from "firebase/storage";
+import {ref,getStorage ,getDownloadURL,deleteObject} from "firebase/storage";
 
 const MainDashboard = () => {
   const { id } = useParams();
@@ -24,10 +24,9 @@ const MainDashboard = () => {
     Prize: "",
     EventBanner: "",
     Email: "",
-    Image:""
+    Image:"",
+    ImgName:""
   }])
-  const [initial_url,final_url] = useState("");
-
   const getdata = async () => {
     try {
       const response = await axios.get(`https://its-rgpv-nmum.vercel.app/MainDashbord/${id}`);
@@ -35,10 +34,9 @@ const MainDashboard = () => {
       const requestData = response.data.request;
       requestData.map((object) => {
         const storage = getStorage();
+  
         const imgref = ref(storage,`files/${object.image}`);
-        getDownloadURL(imgref).then((url) => {
-          final_url(url)
-        })
+        getDownloadURL(imgref).then((url) => {      
       final((info) => [
         ...info, {
           id: object._id,
@@ -52,9 +50,11 @@ const MainDashboard = () => {
           EventBanner: object.EventBanner,
           Email: object.ReqEmail,
           MobileNumber: object.MobileNumber,
-          Image: initial_url,
+          Image:url,
+          ImgName:object.image
         }
       ])
+    })
     })
   } catch (error) {
   if(error.response.request.status === 401){
@@ -157,16 +157,15 @@ const MainDashboard = () => {
                                   </svg>
                                 </Link>
 
-                                <button id="deletebutton" onClick={async () => {
-                                  try{
-                                  const response = await axios.delete(`https://its-rgpv-nmum.vercel.app/Request/${reqData.id}`);
+                                <button id="deletebutton" onClick={async () => {                
+                                   const storage = getStorage();
+                                    const desertRef = ref(storage, `files/${reqData.ImgName}`);
+                                   await deleteObject(desertRef)
+                                  await axios.delete(`http://127.0.0.1:4000/Request/${reqData.id}`);
                                  toast("Request have been delete...")
                                   final((initial)=>
                                     initial.filter(e=>e.id!=reqData.id)
                                   )
-                                  }catch(error){
-                                    console.log(error);
-                                  }
                                 }}>
                                   <svg
                                     className="mx-2 w-4 fill-current text-red-500 curs"
