@@ -153,9 +153,9 @@ img {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
   border-radius: 4rem;
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 500;
   cursor: pointer;
 }
