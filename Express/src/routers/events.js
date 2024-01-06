@@ -81,7 +81,7 @@ router.get("/VerifyEvent/:id",verify,async(req,res)=>{
       }
       else{
       const res = await Request.create({
-        Password,ReqEmail,EventName,Discreption, Place, EDate, Time,Name,MobileNumber,RegLink,image:req.file.filename,})
+        Password,ReqEmail,EventName,Discreption, Place, EDate, Time,Name,MobileNumber,RegLink,image})
       }
       res.json({HostEmail1:process.env.HostEmail1 , HostEmail2:process.env.HostEmail2  }).status(201);
      }

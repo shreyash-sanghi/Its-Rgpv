@@ -8,7 +8,6 @@ import { imageDb } from "./Eventfile";
 import { ref, uploadBytes ,getStorage} from "firebase/storage"; 
 import {v4} from 'uuid';
 
-
 const AddEvent = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -33,23 +32,25 @@ const AddEvent = () => {
 
   const EventData = (e) => {
     const { name, value } = e.target;
-       final((Edata) => {
+    console.log(name+ "  "+value)
+      final((Edata) => {
         return {
           ...Edata,
           [name]: value
         }
       })
   }
+
   const EventSave = async (event) => {
     event.preventDefault();
 
     const storage = getStorage();
-    const image = `${initialfile.name + v4()}`;
-     const imgref = ref(storage,`files/${image}`);
+     const image = `${initialfile.name + v4()}`;
+    const imgref = ref(storage,`files/${image}`);
     try {
     const { EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink } = initial;
-
-      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/uplodeData`,{EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink,image})
+      const response = await axios.post("https://its-rgpv-nmum.vercel.app/uplodeData"
+      ,{EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink,image})
       try {
         uploadBytes(imgref,initialfile)
       } catch (error) {
@@ -69,7 +70,7 @@ const AddEvent = () => {
         emailjs.sendForm(process.env.ServiceId,process.env.TemplateId, form.current, process.env.PublicKey)  
         }catch (error) {
           toast(error)
-         }
+        }
       }
     } catch (error) {
       toast("Please Enter Correct Email and Password ");
