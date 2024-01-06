@@ -7,7 +7,6 @@ const  AddEvent = require('../Model/event_data');
 const PastEvent = require('../Model/PastEvent.js');
 const bcrypt = require('bcryptjs');
 const Request = require('../Model/ReqModel');
-const multer = require('multer');
 const path = require("path");
 const fs = require('fs');
 
@@ -67,33 +66,17 @@ router.get("/VerifyEvent/:id",verify,async(req,res)=>{
     }
   })
 
-
-const images = path.join(__dirname, "../../public/images");
-
- const storage = multer.diskStorage({
-   destination:function(req,file,cb){
-     return cb(null,images)
-   }
-   ,
-   filename:function(req,file,cb){
-     return cb(null,`${Date.now()}_${file.originalname}`)
-   }
- })
- 
- const uplode =multer({storage})
-
   //Event Add
- router.post("/uplodeData",addData,uplode.single('file'),async (req,res)=>{
+  router.post("/uplodeData",addData,async (req,res)=>{
     try{
-    const {Password,ReqEmail,Discreption,EventName,Place,EDate, Time, Name,RegLink,MobileNumber} = req.body;
+    const {Password,ReqEmail,Discreption,EventName,Place,EDate, Time, Name,RegLink,MobileNumber,image} = req.body;
     let em = req.user;
      let pa = req.password;
      const isMatch = await bcrypt.compare(Password, pa);
      if(em===ReqEmail && isMatch===true){
       if(ReqEmail === (process.env.HostEmail1 || process.env.HostEmail2) ){
         await AddEvent.create({
-        EventName,Name,Discreption,Place,EDate, Time,ReqEmail,Name,RegLink,
-        image:req.file.filename,
+        EventName,Name,Discreption,Place,EDate, Time,ReqEmail,Name,RegLink,image
         })
       }
       else{

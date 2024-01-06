@@ -4,6 +4,10 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
+import { imageDb } from "./Eventfile";
+import { ref, uploadBytes ,getStorage} from "firebase/storage"; 
+import {v4} from 'uuid';
+
 
 const AddEvent = () => {
   const { id } = useParams();
@@ -19,7 +23,6 @@ const AddEvent = () => {
     Name: "",
     MobileNumber: "",
     RegLink: "",
-    EventBanner: "",
     ReqEmail: "",
     Password: "",
   })
@@ -29,45 +32,29 @@ const AddEvent = () => {
 
 
   const EventData = (e) => {
-    const image = e.target.files;
     const { name, value } = e.target;
-
-    if (name === "") {
-      return {
-        EventName: initial.EventName,
-        Discreption: initial.Discreption,
-        Place: initial.Place,
-        EDate: initial.EDate,
-        Time: initial.Time,
-        Name: initial.HostName,
-        MobileNumber: initial.MobileNumber,
-        RegLink: initial.Prize,
-        EventBanner: image[0],
-        ReqEmail: initial.ReqEmail,
-        Password: initial.Password,
-      }
-    }
-    else {
-      final((Edata) => {
+       final((Edata) => {
         return {
           ...Edata,
           [name]: value
         }
       })
-    }
   }
-  const myform = document.getElementById("form");
   const EventSave = async (event) => {
     event.preventDefault();
-    try {
-    const formdata = new FormData(myform);
-    const { EventBanner,EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink } = initial;
-    formdata.append('file',initialfile);
-    formdata.append('data', {EventBanner,EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink} );
-      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/uplodeData`
-      ,formdata,
-      { headers: {'Content-Type': 'multipart/form-data'}})
 
+    const storage = getStorage();
+    const image = `${initialfile.name + v4()}`;
+     const imgref = ref(storage,`files/${image}`);
+    try {
+    const { EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink } = initial;
+
+      const response = await axios.post(`https://its-rgpv-nmum.vercel.app/uplodeData`,{EventName, Discreption, Place, ReqEmail, EDate, Password, Time, Name,MobileNumber,RegLink,image})
+      try {
+        uploadBytes(imgref,initialfile)
+      } catch (error) {
+        toast("Your Banner is not uplode")
+      }
       const HostEmail1 = response.data.HostEmail1;
       const HostEmail2 = response.data.HostEmail2;
       finalhost1(HostEmail1);

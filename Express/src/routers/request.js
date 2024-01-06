@@ -1,7 +1,6 @@
 const express = require('express');
 const router = new express.Router();
 const Request = require('../Model/ReqModel');
-const multer = require('multer');
 const path = require("path");
 
 router.post("/request",async (req, res) => {
