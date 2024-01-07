@@ -4,14 +4,15 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-    <footer class="px-12 pb-4 mx-auto footer overflow-hidden">
+    <footer id='footer' class="px-12 pb-4 mx-auto footer overflow-hidden">
   <div class="container px-5 pt-20 pb-8 mx-auto">
     <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium  tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav class="list-none mb-10">
-          <li>
-            <a href="#" class="">Library & KRC Lab</a>
+          <li onClick={() => {
+            window.scrollTo(0, 0);}}>
+          <a href="#" class=""><NavLink to='/library'>Central Library</NavLink></a>
           </li>
           <li>
             <a href="#" class="">Important Links</a>

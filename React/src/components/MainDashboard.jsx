@@ -159,7 +159,7 @@ const MainDashboard = () => {
 
                                 <button id="deletebutton" onClick={async () => {                
                                    const storage = getStorage();
-                                    const desertRef = ref(storage, `files/${reqData.ImgName}`);
+                                    const desertRef = ref(storage,`files/${reqData.ImgName}`);
                                    await deleteObject(desertRef)
                                   await axios.delete(`http://127.0.0.1:4000/Request/${reqData.id}`);
                                  toast("Request have been delete...")

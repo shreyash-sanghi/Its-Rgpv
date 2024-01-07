@@ -71,7 +71,7 @@ router.get("/VerifyEvent/:id",verify,async(req,res)=>{
     try{
     const {Password,ReqEmail,Discreption,EventName,Place,EDate, Time, Name,RegLink,MobileNumber,image} = req.body;
     let em = req.user;
-     let pa = req.password;
+     let pa = req.password; 
      const isMatch = await bcrypt.compare(Password, pa);
      if(em===ReqEmail && isMatch===true){
       if(ReqEmail === (process.env.HostEmail1 || process.env.HostEmail2) ){

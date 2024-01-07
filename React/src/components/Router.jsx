@@ -19,6 +19,7 @@ import StudentDashbord from "./StudentDashbord.jsx";
 import MainDashboardNav from "./MainDashboardNav.jsx";
 import Hostel from "./Hostel.jsx";
 import VerifyEvent from "./VerifyEvent.jsx";
+
 import AllEventDashbord from "./AllEventDashbord.jsx";
 import DepartmentalClubs from "./DepartmentalClubs.jsx";
 import FullEvent from "./FullEvent.jsx";
@@ -52,6 +53,7 @@ const Router = () => {
           <Route exact path="/maindashboard/:id" Component={MainDashboard}></Route>
           <Route exact path="/request" Component={Request}></Route>
           <Route exact path="/LogOut" Component={LogOut}></Route>
+          <Route exact path="/library" Component={Library}></Route>
           <Route exact path="/vice-chancellor-message" Component={VCMessage}></Route>
           <Route exact path="/director-message" Component={DirectorsMessage}></Route>
           <Route exact path="/head-of-departments" Component={Hod}></Route>

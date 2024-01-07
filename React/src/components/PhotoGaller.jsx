@@ -4,19 +4,16 @@ import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import nssimg from "../assets/nssimg2.jpg";
 import nccimg from "../assets/nccimg.jpg";
-import grpimg1 from '../assets/grpimg1.jpeg'
 import grpimg2 from '../assets/grpimg2.jpeg'
-import grpimg3 from '../assets/grpimg3.jpg'
-import grpimg4 from '../assets/grpimg4.jpg'
 import grpimg5 from '../assets/grpimg5.jpg'
 import grpimg6 from '../assets/grpimg6.jpeg'
+import exgrp from '../assets/batchmatesimages/exgrp.png'
 import grpimg9 from '../assets/grpimg9.jpeg'
 import grpimg11 from '../assets/grpimg11.jpg'
 import grpimg12 from '../assets/grpimg12.jpg'
 import grpimg13 from '../assets/grpimg13.jpg'
 import Footer from "./Footer";
 import image3 from '../assets/image3.png'
-import image4 from '../assets/image4.png'
 
 const PhotoGaller = () => {
 
@@ -184,7 +181,7 @@ const PhotoGaller = () => {
                 <div class="relative pb-48 overflow-hidden">
                   <img
                     class="absolute inset-0 h-full w-full object-cover p-4 rounded "
-                    src={grpimg1}
+                    src={exgrp}
                     alt=""
                   />
                 </div>
@@ -241,7 +238,7 @@ const PhotoGaller = () => {
                   />
                 </div>
                 <div class="p-4">
-                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                  <Link to='/uit-rgpv-photos' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
                     View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
                   <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
@@ -267,7 +264,7 @@ const PhotoGaller = () => {
                   />
                 </div>
                 <div class="p-4">
-                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                  <Link to='/departmental-events' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
                     View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
                   <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
@@ -293,7 +290,7 @@ const PhotoGaller = () => {
                   />
                 </div>
                 <div class="p-4">
-                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                  <Link to='/workshop-photos' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
                     View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
                   <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
@@ -319,7 +316,7 @@ const PhotoGaller = () => {
                   />
                 </div>
                 <div class="p-4">
-                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                  <Link to='/departments' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
                     View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
                   <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
@@ -345,7 +342,7 @@ const PhotoGaller = () => {
                   />
                 </div>
                 <div class="p-4">
-                  <Link class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
+                  <Link to='/hostel-events' class="inline-block px-4 py-2 leading-none bg-pink-600  rounded-full font-semibold uppercase tracking-wide text-xs">
                     View All <i class="ri-arrow-right-up-fill"></i>
                   </Link>
                   <Link class="inline-block px-4 py-1 leading-none bg-blue-600  rounded-full ml-2 font-semibold uppercase tracking-wide text-sm">
